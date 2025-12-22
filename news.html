@@ -281,6 +281,20 @@
                                     this.querySelector('.wechat-qr').style.display = 'none';
                                 });
                             </script>
+                            <a href="#line" class="line" style="position:relative;">
+                                <span class="fa fa-commenting"></span>
+                                <img src="assets/images/line.png"
+                                    style="position:absolute;top:110%;left:50%;transform:translateX(-50%);display:none;z-index:10;width:200px;"
+                                    class="line-qr">
+                            </a>
+                            <script>
+                                document.querySelector('.line').addEventListener('mouseenter', function () {
+                                    this.querySelector('.line-qr').style.display = 'block';
+                                });
+                                document.querySelector('.line').addEventListener('mouseleave', function () {
+                                    this.querySelector('.line-qr').style.display = 'none';
+                                });
+                            </script>
                             <a href="https://github.com/beibeikun/kogakai_website" class="github"><span
                                     class="fa fa-github"></span></a>
                         </div>

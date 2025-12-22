@@ -14581,7 +14581,7 @@ header {
   height: 90px;
   display: grid;
   align-items: center;
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+  box-shadow: none;
 }
 
 header.nav-fixed {

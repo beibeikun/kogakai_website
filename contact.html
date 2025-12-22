@@ -151,16 +151,21 @@
                                 <p class="mb-sm-5 mb-4">通过微信与我们的官方客服取得联络<br>以获取最快的回复。</p>
                             </div>
                             <div class="text-center mt-4">
-                                <!-- 微信客服二维码 -->
+                                <!-- 客服二维码 -->
                                 <div class="d-inline-block mx-4 mb-3">
                                     <img src="assets/images/wechat1.png" alt="微信客服1" class="img-fluid rounded shadow-sm"
-                                        style="max-width:200px; border: 1px solid #eee;">
-                                    <p class="mt-2 text-muted small">客服一</p>
+                                        style="max-width:150px; border: 1px solid #eee;">
+                                    <p class="mt-2 text-muted small">微信客服一</p>
                                 </div>
                                 <div class="d-inline-block mx-4 mb-3">
                                     <img src="assets/images/wechat2.png" alt="微信客服2" class="img-fluid rounded shadow-sm"
-                                        style="max-width:200px; border: 1px solid #eee;">
-                                    <p class="mt-2 text-muted small">客服二</p>
+                                        style="max-width:150px; border: 1px solid #eee;">
+                                    <p class="mt-2 text-muted small">微信客服二</p>
+                                </div>
+                                <div class="d-inline-block mx-4 mb-3">
+                                    <img src="assets/images/line.png" alt="line客服" class="img-fluid rounded shadow-sm"
+                                        style="max-width:150px; border: 1px solid #eee;">
+                                    <p class="mt-2 text-muted small">Line客服</p>
                                 </div>
                             </div>
                         </div>
@@ -215,6 +220,20 @@
                                 });
                                 document.querySelector('.wechat').addEventListener('mouseleave', function () {
                                     this.querySelector('.wechat-qr').style.display = 'none';
+                                });
+                            </script>
+                            <a href="#line" class="line" style="position:relative;">
+                                <span class="fa fa-commenting"></span>
+                                <img src="assets/images/line.png"
+                                    style="position:absolute;top:110%;left:50%;transform:translateX(-50%);display:none;z-index:10;width:200px;"
+                                    class="line-qr">
+                            </a>
+                            <script>
+                                document.querySelector('.line').addEventListener('mouseenter', function () {
+                                    this.querySelector('.line-qr').style.display = 'block';
+                                });
+                                document.querySelector('.line').addEventListener('mouseleave', function () {
+                                    this.querySelector('.line-qr').style.display = 'none';
                                 });
                             </script>
                             <a href="https://github.com/beibeikun/kogakai_website" class="github"><span
