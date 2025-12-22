@@ -19,7 +19,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg stroke px-0">
                 <h1> <a class="navbar-brand" href="index.html">
-                        <span class="hny-log">A</span>dvisory
+                        <img src="./assets/images/logo.svg" alt="Advisory Logo" style="height:35px;">
                     </a></h1>
                 <!-- if logo is image enable this   
     <a class="navbar-brand" href="#index.html">
@@ -119,48 +119,65 @@
                 <div class="row footer-top-29">
                     <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5">
                         <div class="footer-logo mb-3">
-                            <a class="navbar-brand" href="index.html">Advisory</a>
+                            <a class="navbar-brand" href="index.html">株式会社古河會</a>
                         </div>
-                        <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
-                            tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>
+                        <p>株式会社古河會 总部位于日本京都，是一家以古董断代溯源大数据平台为核心的文化资产科技企业，
+                            专注于艺术品拍卖、文化资产数字化与科学断代鉴定。
+                            </p>
                         <div class="main-social-footer-29 mt-4">
-                            <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
-                            <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
-                            <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
-                            <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+                            <a href="#weixin" class="weixin" style="position:relative;">
+                                <span class="fa fa-weixin"></span>
+                                <img src="assets/images/wechat1.png" style="position:absolute;top:110%;left:50%;transform:translateX(-50%);display:none;z-index:10;width:200px;" class="wechat-qr">
+                            </a>
+                            <script>
+                                document.querySelector('.weixin').addEventListener('mouseenter',function(){
+                                    this.querySelector('.wechat-qr').style.display='block';
+                                });
+                                document.querySelector('.weixin').addEventListener('mouseleave',function(){
+                                    this.querySelector('.wechat-qr').style.display='none';
+                                });
+                            </script>
+                            <a href="#wechat" class="wechat" style="position:relative;">
+                                <span class="fa fa-wechat"></span>
+                                <img src="assets/images/wechat2.png" style="position:absolute;top:110%;left:50%;transform:translateX(-50%);display:none;z-index:10;width:200px;" class="wechat-qr">
+                            </a>
+                            <script>
+                                document.querySelector('.wechat').addEventListener('mouseenter',function(){
+                                    this.querySelector('.wechat-qr').style.display='block';
+                                });
+                                document.querySelector('.wechat').addEventListener('mouseleave',function(){
+                                    this.querySelector('.wechat-qr').style.display='none';
+                                });
+                            </script>
+                            <a href="https://github.com/beibeikun/kogakai_website" class="github"><span class="fa fa-github"></span></a>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-sm-0 mt-5">
 
                         <ul>
-                            <h6 class="footer-title-29">Usefull Links</h6>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="blog.html"> Blog posts</a></li>
-                            <li><a href="#pricing"> Pricing plans</a></li>
-                            <li><a href="#careers"> Careers</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="contact.html">Contact us</a></li>
+                            <h6 class="footer-title-29">相关技术</h6>
+                            <li><a href="about.html">技术能力</a></li>
+                            <li><a href="blog.html">资产唯一身份</a></li>
+                            <li><a href="#pricing">资产数据库</a></li>
+                            <li><a href="#careers">商业化系统</a></li>
+                            <li><a href="services.html">资产金融化</a></li>
+                            <li><a href="contact.html">行业解决方案</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-3 mt-lg-0 mt-5">
-                        <h6 class="footer-title-29">More Info</h6>
+                        <h6 class="footer-title-29">更多信息</h6>
                         <ul>
-                            <li><a href="#profile">Group Profile</a></li>
-                            <li><a href="#vision">Vision & Values</a></li>
-                            <li><a href="#history">History</a></li>
-                            <li><a href="#leader">Leadership</a></li>
-                            <li><a href="#award">Awards</a></li>
-                            <li><a href="#media"> Media</a></li>
-                            <li><a href="#spotlight">Spotlight</a></li>
-                            <li><a href="#support"> Support</a></li>
+                            <li><a href="news.html">新闻与背书</a></li>
+                            <li><a href="about.html">关于我们</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
                         </ul>
 
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
-                        <h6 class="footer-title-29">Contact Info </h6>
-                        <p><strong>Address :</strong> Advisory Consutancy, 343 Honey Avenue street, NY - 62617.</p>
-                        <p class="my-2"><strong>Phone :</strong> <a href="tel:+12 23456799">+12 23456799</a></p>
-                        <p><strong>Email :</strong> <a href="mailto:info@example.com">info@example.com</a></p>
+                        <h6 class="footer-title-29">联系信息 </h6>
+                        <p><strong>地址 :</strong> 〒603-8835 京都府京都市北区大宮西総門口町42-1 古河ビル</p>
+                        <p class="my-2"><strong>电话 :</strong> <a href="tel:075-468-1620">075-468-1620</a></p>
+                        <p><strong>Email :</strong> <a href="mailto:yoshinaga.nao1982@gmail.com">yoshinaga.nao1982@gmail.com</a></p>
 
                         <div class="map-iframe-ft mt-4">
                             <iframe
@@ -175,22 +192,40 @@
     </section>
     <!-- //footer -->
 
-    <!-- copyright -->
+   <!-- copyright -->
     <section class="w3l-copyright">
         <div class="container">
             <div class="row bottom-copies">
-                <p class="col-lg-8 copy-footer-29">Copyright &copy; 2020.Company name All rights reserved</p>
-
-                <div class="col-lg-4 footer-list-29">
-                    <ul class="d-flex text-lg-right">
-                        <li><a href="#careers"> Careers</a></li>
-                        <li class="mx-lg-5 mx-md-4 mx-3"><a href="#privacymy-lg-0 my-4">Privacy Policy</a></li>
-                        <li><a href="contact.html">Contact us</a></li>
-                    </ul>
-                </div>
-
+                <p class="col-lg-8 copy-footer-29">Copyright &copy; 2026.KOGAKAI All rights reserved</p>
             </div>
         </div>
+
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            &#10548;
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- /move top -->
+    </section>
 
         <!-- move top -->
         <button onclick="topFunction()" id="movetop" title="Go to top">
