@@ -64,14 +64,14 @@
 	};
 	
 	$.fn.countTo.defaults = {
-		from: 0,               // the number the element should start at
-		to: 0,                 // the number the element should end at
-		speed: 1000,           // how long it should take to count between the target numbers
-		refreshInterval: 1,  // how often the element should be updated
-		decimals: 0,           // the number of decimal places to show
-		formatter: formatter,  // handler for formatting the value before rendering
-		onUpdate: null,        // callback method for every time the element is updated
-		onComplete: null       // callback method for when the element finishes updating
+		from: 0,               // 元素起始值
+		to: 0,                 // 元素结束值
+		speed: 1000,           // 从起始值到结束值所需的时长（毫秒）
+		refreshInterval: 1,    // 元素值更新的间隔（毫秒）
+		decimals: 0,           // 显示的小数位数
+		formatter: formatter,  // 渲染前用于格式化数值的处理函数
+		onUpdate: null,        // 每次元素值更新时的回调函数
+		onComplete: null       // 元素值更新完成后的回调函数
 	};
 	
 	function formatter(value, settings) {
