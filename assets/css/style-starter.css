@@ -14793,10 +14793,13 @@ nav ul li a:hover {
   margin-bottom: 16px;
 }
 
-.navbar .search-right .popup h3 {
-  font-size: 6px;
-  color: #fff;
-  margin-bottom: 16px;
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
 }
 
 .navbar .search-right .search-top span.fa {
@@ -17350,5 +17353,13 @@ button.owl-next {
 
 /* / contact1-responsive */
 /* /contact1 */
+
+/* Fix for dropdown hover on desktop */
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
 
 /*# sourceMappingURL=style-freedom.css.map */
