@@ -22,7 +22,7 @@
                         <img src="./assets/images/logo.svg" alt="Advisory Logo" style="height:35px;">
                     </a></h1>
                 <!-- if logo is image enable this   
-    <a class="navbar-brand" href="#index.html">
+    <a class="navbar-brand" href="#index-ja.html">
         <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
     </a> -->
                 <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
@@ -35,24 +35,24 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">会社情報</a>
+                            <a class="nav-link" href="about-ja.html">会社情報</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="platform-overview.html" id="navbarDropdown"
+                            <a class="nav-link dropdown-toggle" href="platform-overview-ja.html" id="navbarDropdown"
                                 role="button" aria-haspopup="true" aria-expanded="false">
                                 プラットフォーム概要
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="platform-overview.html#technology">技術力</a>
-                                <a class="dropdown-item" href="platform-overview.html#asset-id">資産の一意識別</a>
-                                <a class="dropdown-item" href="platform-overview.html#database">資産データベース</a>
-                                <a class="dropdown-item" href="platform-overview.html#commercialization">商業化システム</a>
-                                <a class="dropdown-item" href="platform-overview.html#finance">資産の金融化</a>
-                                <a class="dropdown-item" href="platform-overview.html#solutions">業界別ソリューション</a>
+                                <a class="dropdown-item" href="platform-overview-ja.html#technology">技術力</a>
+                                <a class="dropdown-item" href="platform-overview-ja.html#asset-id">資産の一意識別</a>
+                                <a class="dropdown-item" href="platform-overview-ja.html#database">資産データベース</a>
+                                <a class="dropdown-item" href="platform-overview-ja.html#commercialization">商業化システム</a>
+                                <a class="dropdown-item" href="platform-overview-ja.html#finance">資産の金融化</a>
+                                <a class="dropdown-item" href="platform-overview-ja.html#solutions">業界別ソリューション</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="news.html">ニュース</a>
+                            <a class="nav-link" href="news-ja.html">ニュース</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="contact-ja.html">お問い合わせ</a>
@@ -88,7 +88,7 @@
         <section class="w3l-breadcrumb">
             <div class="container">
                 <ul class="breadcrumbs-custom-path">
-                    <li><a href="index.html">ホームページ</a></li>
+                    <li><a href="index-ja.html">ホームページ</a></li>
                     <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span> お問い合わせ</li>
                 </ul>
             </div>
@@ -191,11 +191,25 @@
                 <div class="row footer-top-29">
                     <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5">
                         <div class="footer-logo mb-3">
-                            <a class="navbar-brand" href="index.html">株式会社古河會</a>
+                            <a class="navbar-brand" href="index-ja.html">株式会社古河會</a>
                         </div>
                         <p>株式会社古河會は日本・京都に本社を構える、古美術品の年代判定および来歴追跡に関するビッグデータプラットフォームを中核とする文化資産テクノロジー企業です。美術品オークション、文化資産のデジタル化、ならびに科学的年代鑑定に特化しています。
                         </p>
                         <div class="main-social-footer-29 mt-4">
+                            <a href="#line" class="line" style="position:relative;">
+                                <span class="fa fa-commenting"></span>
+                                <img src="assets/images/line.png"
+                                    style="position:absolute;top:110%;left:50%;transform:translateX(-50%);display:none;z-index:10;width:200px;"
+                                    class="line-qr">
+                            </a>
+                            <script>
+                                document.querySelector('.line').addEventListener('mouseenter', function () {
+                                    this.querySelector('.line-qr').style.display = 'block';
+                                });
+                                document.querySelector('.line').addEventListener('mouseleave', function () {
+                                    this.querySelector('.line-qr').style.display = 'none';
+                                });
+                            </script>
                             <a href="#weixin" class="weixin" style="position:relative;">
                                 <span class="fa fa-weixin"></span>
                                 <img src="assets/images/wechat1.png"
@@ -224,20 +238,6 @@
                                     this.querySelector('.wechat-qr').style.display = 'none';
                                 });
                             </script>
-                            <a href="#line" class="line" style="position:relative;">
-                                <span class="fa fa-commenting"></span>
-                                <img src="assets/images/line.png"
-                                    style="position:absolute;top:110%;left:50%;transform:translateX(-50%);display:none;z-index:10;width:200px;"
-                                    class="line-qr">
-                            </a>
-                            <script>
-                                document.querySelector('.line').addEventListener('mouseenter', function () {
-                                    this.querySelector('.line-qr').style.display = 'block';
-                                });
-                                document.querySelector('.line').addEventListener('mouseleave', function () {
-                                    this.querySelector('.line-qr').style.display = 'none';
-                                });
-                            </script>
                             <a href="https://github.com/beibeikun/kogakai_website" class="github"><span
                                     class="fa fa-github"></span></a>
                         </div>
@@ -246,20 +246,20 @@
 
                         <ul>
                             <h6 class="footer-title-29">関連技術</h6>
-                            <li><a href="platform-overview.html#technology">技術力</a></li>
-                            <li><a href="platform-overview.html#asset-id">資産の一意識別</a></li>
-                            <li><a href="platform-overview.html#database">資産データベース</a></li>
-                            <li><a href="platform-overview.html#commercialization">商業化システム</a></li>
-                            <li><a href="platform-overview.html#finance">資産の金融化</a></li>
-                            <li><a href="platform-overview.html#solutions">業界別ソリューション</a></li>
+                            <li><a href="platform-overview-ja.html#technology">技術力</a></li>
+                            <li><a href="platform-overview-ja.html#asset-id">資産の一意識別</a></li>
+                            <li><a href="platform-overview-ja.html#database">資産データベース</a></li>
+                            <li><a href="platform-overview-ja.html#commercialization">商業化システム</a></li>
+                            <li><a href="platform-overview-ja.html#finance">資産の金融化</a></li>
+                            <li><a href="platform-overview-ja.html#solutions">業界別ソリューション</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-3 mt-lg-0 mt-5">
                         <h6 class="footer-title-29">詳細情報</h6>
                         <ul>
-                            <li><a href="about.html">会社情報</a></li>
-                            <li><a href="news.html">ニュース</a></li>
-                            <li><a href="contact.html">お問い合わせ</a></li>
+                            <li><a href="about-ja.html">会社情報</a></li>
+                            <li><a href="news-ja.html">ニュース</a></li>
+                            <li><a href="contact-ja.html">お問い合わせ</a></li>
                         </ul>
 
                     </div>
@@ -288,7 +288,7 @@
     <section class="w3l-copyright">
         <div class="container">
             <div class="row bottom-copies">
-                <p class="col-lg-8 copy-footer-29">Copyright &copy; 2026.KOGAKAI All rights reserved</p>
+                <p class="col-lg-8 copy-footer-29">Copyright &copy; 2026. KOGAKAI All rights reserved</p>
             </div>
         </div>
 

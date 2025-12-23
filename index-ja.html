@@ -282,13 +282,14 @@
     <div class="w3l-homeblog py-5" id="homeblog" style="background: var(--bg-lightgrey);">
         <div class="container py-lg-5 py-md-4">
             <h6 class="sub-titlehny text-center">News & Updates</h6>
-            <h3 class="hny-title mb-md-5 mb-4 pb-md-0 pb-2 text-center">新闻与背书</h3>
+            <h3 class="hny-title mb-md-5 mb-4 pb-md-0 pb-2 text-center">ニュース</h3>
             <div class="row top-pics">
                 <div class="col-lg-6 col-md-6">
                     <div class="top-pic1">
                         <div class="card-body blog-details">
-                            <p>公司动态</p>
-                            <a href="blog-single-ja.html" class="blog-desc">古河會与京都国立博物馆达成战略合作意向
+                            <p>企業動向</p>
+                            <a href="blog-single-ja.html" class="blog-desc">
+                                古河會、京都国立博物館と戦略的提携に向けた基本合意を締結
                             </a>
                             <div class="author align-items-center">
                                 <img src="assets/images/admin.jpg" alt="" class="img-fluid rounded-circle">
@@ -306,8 +307,9 @@
                         <div class="col-md-6 top-1">
                             <div class="top-pic2">
                                 <div class="card-body blog-details">
-                                    <p>行业新闻</p>
-                                    <a href="blog-single-ja.html" class="blog-desc">AI技术在古董断代中的应用前景分析
+                                    <p>業界ニュース</p>
+                                    <a href="blog-single-ja.html" class="blog-desc">
+                                        AI技術を活用したアンティーク年代判定の応用可能性に関する分析
                                     </a>
                                     <div class="author align-items-center">
                                         <img src="assets/images/admin.jpg" alt="" class="img-fluid rounded-circle">
@@ -320,11 +322,13 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-6 top-1 mt-md-0 mt-4">
                             <div class="top-pic3">
                                 <div class="card-body blog-details">
-                                    <p>技术突破</p>
-                                    <a href="blog-single-ja.html" class="blog-desc">XRF光谱分析仪在陶瓷鉴定中的新发现
+                                    <p>技術的ブレークスルー</p>
+                                    <a href="blog-single-ja.html" class="blog-desc">
+                                        XRF分光分析装置を用いた陶磁器鑑定における新たな知見
                                     </a>
                                     <div class="author align-items-center">
                                         <img src="assets/images/admin.jpg" alt="" class="img-fluid rounded-circle">
@@ -341,7 +345,7 @@
                 </div>
 
                 <div class="readhny-btm text-center mx-auto mt-md-4">
-                    <a class="btn btn-primary btn-style mt-md-5 mt-4" href="news-ja.html">查看更多</a>
+                    <a class="btn btn-primary btn-style mt-md-5 mt-4" href="news-ja.html">ニュースを見る</a>
                 </div>
             </div>
         </div>
@@ -377,6 +381,20 @@
                         <p>株式会社古河會は日本・京都に本社を構える、古美術品の年代判定および来歴追跡に関するビッグデータプラットフォームを中核とする文化資産テクノロジー企業です。美術品オークション、文化資産のデジタル化、ならびに科学的年代鑑定に特化しています。
                         </p>
                         <div class="main-social-footer-29 mt-4">
+                            <a href="#line" class="line" style="position:relative;">
+                                <span class="fa fa-commenting"></span>
+                                <img src="assets/images/line.png"
+                                    style="position:absolute;top:110%;left:50%;transform:translateX(-50%);display:none;z-index:10;width:200px;"
+                                    class="line-qr">
+                            </a>
+                            <script>
+                                document.querySelector('.line').addEventListener('mouseenter', function () {
+                                    this.querySelector('.line-qr').style.display = 'block';
+                                });
+                                document.querySelector('.line').addEventListener('mouseleave', function () {
+                                    this.querySelector('.line-qr').style.display = 'none';
+                                });
+                            </script>
                             <a href="#weixin" class="weixin" style="position:relative;">
                                 <span class="fa fa-weixin"></span>
                                 <img src="assets/images/wechat1.png"
@@ -403,20 +421,6 @@
                                 });
                                 document.querySelector('.wechat').addEventListener('mouseleave', function () {
                                     this.querySelector('.wechat-qr').style.display = 'none';
-                                });
-                            </script>
-                            <a href="#line" class="line" style="position:relative;">
-                                <span class="fa fa-commenting"></span>
-                                <img src="assets/images/line.png"
-                                    style="position:absolute;top:110%;left:50%;transform:translateX(-50%);display:none;z-index:10;width:200px;"
-                                    class="line-qr">
-                            </a>
-                            <script>
-                                document.querySelector('.line').addEventListener('mouseenter', function () {
-                                    this.querySelector('.line-qr').style.display = 'block';
-                                });
-                                document.querySelector('.line').addEventListener('mouseleave', function () {
-                                    this.querySelector('.line-qr').style.display = 'none';
                                 });
                             </script>
                             <a href="https://github.com/beibeikun/kogakai_website" class="github"><span
@@ -469,7 +473,7 @@
     <section class="w3l-copyright">
         <div class="container">
             <div class="row bottom-copies">
-                <p class="col-lg-8 copy-footer-29">Copyright &copy; 2026.KOGAKAI All rights reserved</p>
+                <p class="col-lg-8 copy-footer-29">Copyright &copy; 2026. KOGAKAI All rights reserved</p>
             </div>
         </div>
 
