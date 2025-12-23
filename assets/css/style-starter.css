@@ -15040,7 +15040,9 @@ nav ul li a:hover {
   background-size: cover;
   z-index: 0;
   position: relative;
-  min-height: 740px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .w3l-banner:before {
@@ -15052,7 +15054,7 @@ nav ul li a:hover {
   left: 0;
   right: 0;
   z-index: -1;
-  min-height: 740px;
+  min-height: 100vh;
 }
 
 .w3l-banner h3 {
@@ -15122,19 +15124,19 @@ nav ul li a:hover {
     margin-left: 0px;
   }
   .w3l-banner,.w3l-banner:before  {
-    min-height: 740px;
+    min-height: 100vh;
   }
 
 }
 @media (max-width:667px) {
   .w3l-banner,.w3l-banner:before  {
-    min-height:640px;
+    min-height: 100vh;
   }
 
 }
 @media (max-width:667px) {
   .w3l-banner,.w3l-banner:before  {
-    min-height:600px;
+    min-height: 100vh;
   }
 }
 @media (max-width: 490px) {
