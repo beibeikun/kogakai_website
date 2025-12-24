@@ -5,9 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>首页</title>
-    <!--/google-fonts-->
-    <!--//google-fonts-->
+    <title>ホームページ</title>
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
 
@@ -18,13 +16,11 @@
     <header id="site-header" class="fixed-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg stroke px-0">
-                <h1> <a class="navbar-brand" href="index.html">
+                <h1>
+                    <a class="navbar-brand" href="index.html">
                         <img src="./assets/images/logo.svg" alt="Advisory Logo" style="height:35px;">
-                    </a></h1>
-                <!-- if logo is image enable this   
-    <a class="navbar-brand" href="#index.html">
-        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-    </a> -->
+                    </a>
+                </h1>
                 <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
                     data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -34,34 +30,42 @@
 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">公司信息</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown"
+                                role="button" aria-haspopup="true" aria-expanded="false">
+                                企業情報
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="founder-vision.html">トップメッセージ</a>
+                                <a class="dropdown-item" href="business-model.html">経営理念</a>
+                                <a class="dropdown-item" href="company-profile.html">会社概要</a>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="platform-overview.html" id="navbarDropdown"
                                 role="button" aria-haspopup="true" aria-expanded="false">
-                                平台总览
+                                プラットフォーム概要
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="platform-overview.html#technology">技术能力</a>
-                                <a class="dropdown-item" href="platform-overview.html#asset-id">资产唯一身份</a>
-                                <a class="dropdown-item" href="platform-overview.html#database">资产数据库</a>
-                                <a class="dropdown-item" href="platform-overview.html#commercialization">商业化系统</a>
-                                <a class="dropdown-item" href="platform-overview.html#finance">资产金融化</a>
-                                <a class="dropdown-item" href="platform-overview.html#solutions">行业解决方案</a>
+                                <a class="dropdown-item" href="platform-overview.html#technology">技術力</a>
+                                <a class="dropdown-item" href="platform-overview.html#asset-id">資産の一意識別</a>
+                                <a class="dropdown-item" href="platform-overview.html#database">資産データベース</a>
+                                <a class="dropdown-item" href="platform-overview.html#commercialization">商業化システム</a>
+                                <a class="dropdown-item" href="platform-overview.html#finance">資産の金融化</a>
+                                <a class="dropdown-item" href="platform-overview.html#solutions">業界別ソリューション</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="news.html">新闻与背书</a>
+                            <a class="nav-link" href="news.html">ニュース</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">联系我们</a>
+                            <a class="nav-link" href="contact.html">お問い合わせ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index-ja.html">Japanese</a>
+                            <a class="nav-link" href="index.html">Chinese</a>
                         </li>
                     </ul>
                 </div>
@@ -89,10 +93,14 @@
         <div class="container py-lg-5 py-md-4 mt-lg-0 mt-5">
             <div class="row align-items-center py-lg-5 py-4 mt-4">
                 <div class="col-lg-6 col-sm-12 mt-lg-5">
-                    <h3 class="mb-4 title">全球高价值 <span class="type-js"><span class="text-js">资产</span></span><br>
-                        验证、确权与流通</h3>
+                    <h3 class="mb-4 title">
+                        信頼を技術で<br>流動性を次世代へ
+                    </h3>
                     <div class="separatorhny"></div>
-                    <p>通过数据、SaaS 与标准化系统让奢侈品、艺术品与古董<br>可信·可追踪·可流通·可金融化</p>
+                    <p>
+                        データで「真価」を定義し、資産の未来を創る<br>
+                        標準化SaaSで、アートと金融の融合を加速させる
+                    </p>
                     <!--
                     <div class="mt-md-5 mt-4 mb-lg-0 mb-4">
                         <a href="about.html" class="btn btn-style btn-white mr-lg-4 mr-sm-3"> 了解我们</a>
@@ -100,224 +108,100 @@
                     </div>
                     -->
                 </div>
-
             </div>
         </div>
         </div>
     </section>
+
     <!-- //banner section -->
     <!-- /content-1-->
-    <div class="content-1 py-5">
-        <div class="container py-md-5">
-            <div class="row content-1-grids">
-                <div class="col-lg-5 content-1-left forms-25-info">
-                    <div class="header-title">
-                        <h3 class="hny-title mb-4">
-                            核心问题与解决方式
-                        </h3>
+    <section class="w3l-servicesblock py-5" id="services-2">
+        <div class="container-fluid py-lg-5 py-md-3 px-0">
+            <div class="row no-gutters">
+                <div class="col-lg-7 about-right-faq align-self mt-lg-0 mt-sm-5 mt-4 pr-lg-5 order-lg-1 order-2">
+                    <div class="pl-lg-5 ml-auto" style="max-width: 650px;">
+                        <h6 class="sub-titlehny text-left">Mission</h6>
+                        <h3 class="hny-title mb-4 text-left" style="font-size: 40px; margin-left: 0; max-width: 100%;">
+                            課題と解決策</h3>
                         <div class="separatorhny"></div>
-                    </div>
-                </div>
-                <div class="col-lg-7 content-1-right pl-lg-5 mt-lg-0 mt-4">
-                    <p class="">长期以来，全球高价值资产在流通过程中普遍面临真伪标准不统一、数据高度分散、交易不透明，因而难以被金融系统有效识别与接入的问题。
-                        针对这一结构性瓶颈，我们以平台化方式，系统性构建从「真实性验证」到「数据确权」，从「数据沉淀」到「资产流通」，再到「金融应用」的一体化基础设施，打通高价值资产进入数字化、标准化与金融化体系的关键通道。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- //content-1-->
-    <section class="w3l-bottom-grids-6 py-5" id="features">
-        <div class="container py-lg-5 py-md-4">
-            <!-- 上方：五大核心 + 描述 + 按钮 -->
-            <div class="row mb-4">
-                <div class="col-12 text-center">
-                    <h3 class="hny-title mb-4">五大核心能力目标</h3>
-                    <div class="separatorhny mx-auto"></div>
-                    <p class="mt-4 px-lg-5">
-                        围绕高价值资产从“可信验证”到“金融应用”的完整生命周期，我们正在系统性构建五大核心能力：以 AI × XRF 为核心的科技验证能力，确立资产真实性基础；
-                        通过 Micro-ID 赋予资产唯一数字身份；逐步沉淀可跨国、可对接的高价值资产数据库；向行业提供 B2B SaaS 与 API
-                        级基础服务；并在此之上探索资产金融化接口，形成可被金融系统识别、定价与使用的底层基础设施体系。
-                    </p>
-                    <!--
-                    <a class="btn btn-primary btn-style mt-4" href="about.html">查看更多</a>
-                    -->
-                </div>
-            </div>
-
-            <!-- 下方：五个卡片并排一行 -->
-            <div class="row text-center justify-content-center">
-                <div class="col-lg-2-4 col-md-4 col-sm-6 mb-4">
-                    <div class="area-box h-100">
-                        <span class="fa fa-flask"
-                            style="font-size: 3.2rem; color: #565f88; margin-bottom: 1.2rem;"></span>
-                        <h4><a href="#feature" class="title-head">科技验证能力<br><small style="font-size:0.8em;">AI ×
-                                    XRF｜建设中</small></a></h4>
-                        <p class="mt-3">通过引入 AI 图像识别、材料特征分析与 XRF
-                            无损检测技术，我们正在构建标准化、可复现的科技验证体系。该能力旨在减少对单一专家经验的依赖，将“鉴定”从主观判断升级为可量化、可追溯的数据结果，为高价值资产的真实性提供技术级背书。
+                        <p class="">
+                            不透明な真贋基準やデータの散逸。 私たちは、高価値資産の流通を阻むこれらの壁を、テクノロジーで取り払います。<br>
+                            真正性の検証から権利のデジタル化、そして金融市場への接続まで。 アートやラグジュアリーが持つ「真の価値」を標準化し、 誰もが信頼できる新たな価値循環のインフラを構築します。
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-2-4 col-md-4 col-sm-6 mb-4">
-                    <div class="area-box h-100">
-                        <span class="fa fa-id-card-o"
-                            style="font-size: 3.2rem; color: #565f88; margin-bottom: 1.2rem;"></span>
-                        <h4><a href="#feature" class="title-head">资产唯一身份<br><small
-                                    style="font-size:0.8em;">Micro-ID｜规划中</small></a></h4>
-                        <p class="mt-3">我们规划为每一件通过验证的资产生成不可复制的
-                            Micro-ID，作为其在数字世界中的唯一身份标识。该身份将绑定资产的验证结果、历史流转与关键特征数据，为后续确权、追溯、流通与金融应用提供统一入口。</p>
-                    </div>
-                </div>
-                <div class="col-lg-2-4 col-md-4 col-sm-6 mb-4">
-                    <div class="area-box h-100">
-                        <span class="fa fa-database"
-                            style="font-size: 3.2rem; color: #565f88; margin-bottom: 1.2rem;"></span>
-                        <h4><a href="#feature" class="title-head">跨国资产数据库<br><small
-                                    style="font-size:0.8em;">逐步建设</small></a></h4>
-                        <p class="mt-3">
-                            在合法合规前提下，我们将逐步沉淀跨地区、跨拍卖场景的高价值资产数据，形成结构化、可查询、可分析的跨国资产数据库。该数据库不仅服务于行业内部效率提升，也将成为资产定价、风控与研究的重要数据基础。
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-2-4 col-md-4 col-sm-6 mb-4">
-                    <div class="area-box h-100">
-                        <span class="fa fa-plug"
-                            style="font-size: 3.2rem; color: #565f88; margin-bottom: 1.2rem;"></span>
-                        <h4><a href="#feature" class="title-head">B2B SaaS 与 API<br><small
-                                    style="font-size:0.8em;">开发中</small></a></h4>
-                        <p class="mt-3">面向拍卖行、鉴定机构、仓储与流通平台，我们提供 B2B SaaS 系统及标准化 API
-                            接口，使合作方能够低成本接入验证、数据管理与资产身份服务。这一能力的目标，是让平台成为行业级基础设施，而非单一业务系统。</p>
-                    </div>
-                </div>
-                <div class="col-lg-2-4 col-md-4 col-sm-6 mb-4">
-                    <div class="area-box h-100">
-                        <span class="fa fa-credit-card"
-                            style="font-size: 3.2rem; color: #565f88; margin-bottom: 1.2rem;"></span>
-                        <h4><a href="#feature" class="title-head">资产金融化接口<br><small
-                                    style="font-size:0.8em;">研究阶段</small></a></h4>
-                        <p class="mt-3">
-                            在前述能力成熟的基础上，我们正研究资产与金融系统之间的标准化接口形态，包括确权证明、数据对接与风控支持机制。该能力将为高价值资产进入融资、担保、证券化等金融场景提供可能，但会以稳健、循序推进为原则。
-                        </p>
-                    </div>
+                <div class="col-lg-5 col-12 left-wthree-img px-0 order-lg-2 order-1">
+                    <img src="assets/images/p1.jpg" alt="" class="img-fluid w-100"
+                        style="object-fit: cover; height: 100%;">
                 </div>
             </div>
         </div>
     </section>
-    <!-- //bottom-grids-->
-    <section class="w3l-servicesblock py-5" id="about">
-        <div class="container py-lg-5 py-md-3">
-            <div class="row">
-                <div class="col-lg-3 col-6 left-wthree-img">
-                    <img src="assets/images/s1.jpg" alt="" class="img-fluid radius-image">
+    <!-- /content-2-->
+    <section class="w3l-servicesblock py-5" id="about" style="background-color: var(--bg-lightgrey);">
+        <div class="container-fluid py-lg-5 py-md-3 px-0">
+            <div class="row no-gutters">
+                <div class="col-lg-5 col-12 left-wthree-img px-0">
+                    <img src="assets/images/p2.jpg" alt="" class="img-fluid w-100"
+                        style="object-fit: cover; height: 100%;">
                 </div>
-                <div class="col-lg-3 col-6 left-wthree-img">
-                    <img src="assets/images/s2.jpg" alt="" class="img-fluid radius-image">
-                </div>
-                <div class="col-lg-6 about-right-faq align-self mt-lg-0 mt-sm-5 mt-4 pl-lg-5">
-                    <h3 class="hny-title mb-4">理念驱动</h3>
-                    <div class="separatorhny"></div>
-                    <p class="">古河會秉承「承古匠精神，以科技构建信任」的使命，融合科学检测
-                        与⼤数据分析，打造统⼀
-                        、客观、可验证的断代与溯源体系；以元素分析、
-                        AI识别、区块链确权等前沿科技为驱动⼒，为全球古董交易提供权威、
-                        透明的价值依据；以国际互通为导向，建⽴与全球拍卖⾏、博物馆及收藏
-                        机构互认的数字化标准，全⾯提升⽂化资产的全球流通与价值转化能⼒；</p>
-                    <div class="two-grids mt-md-0 mt-md-5 mt-4">
-                        <div class="grids_info">
-                            <h4>我们的使命</h4>
-                            <p class="">以合作共赢为原则，为拍卖⾏、收藏家、保险机构及⽂化机构提供全链路、
-                                全⽣命周期的鉴定与认证服务。</p>
-                        </div>
-                        <div class="grids_info">
-                            <h4>我们的愿景</h4>
-                            <p class="">让每⼀件流通的古董都拥有“数字身份证”，让世界因信任⽽收藏，让⽂化因科技⽽传承。</p>
+                <div class="col-lg-7 about-right-faq align-self mt-lg-0 mt-sm-5 mt-4 pl-lg-5">
+                    <div class="pr-lg-5" style="max-width: 650px;">
+                        <h6 class="sub-titlehny text-left">Next-Generation Asset Infrastructure</h6>
+                        <h3 class="hny-title mb-4 text-left" style="font-size: 40px; margin-left: 0; max-width: 100%;">
+                            次世代エコシステムの構築</h3>
+                        <div class="separatorhny"></div>
+                        <p class="">
+                            私たちは、AI鑑定と個体識別技術を基盤に、散逸していた資産データを世界標準のインフラへと再構築します。B2B
+                            SaaSから金融インターフェースまでを一気通貫で提供し、アートやラグジュアリーが持つ真の価値を金融市場へと解放。デジタル化・標準化・金融化が融合する、次世代のエコシステムを具現化します。
+                        </p>
+                        <div class="mt-4">
+                            <a class="btn btn-primary btn-style" href="platform-overview.html">プラットフォーム概要</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- //stats -->
-    <div class="w3l-homeblog py-5" id="homeblog" style="background: var(--bg-lightgrey);">
-        <div class="container py-lg-5 py-md-4">
-            <h6 class="sub-titlehny text-center">News & Updates</h6>
-            <h3 class="hny-title mb-md-5 mb-4 pb-md-0 pb-2 text-center">新闻与背书</h3>
-            <div class="row top-pics">
-                <div class="col-lg-6 col-md-6">
-                    <div class="top-pic1">
-                        <div class="card-body blog-details">
-                            <p>公司动态</p>
-                            <a href="blog-single.html" class="blog-desc">古河會与京都国立博物馆达成战略合作意向
-                            </a>
-                            <div class="author align-items-center">
-                                <img src="assets/images/admin.jpg" alt="" class="img-fluid rounded-circle">
-                                <ul class="blog-meta">
-                                    <li class="meta-item blog-lesson">
-                                        <span class="meta-value"> 2024年10月15日 </span>
-                                    </li>
-                                </ul>
-                            </div>
+    <!-- /content-3-->
+    <section class="w3l-servicesblock py-5" id="services-2">
+        <div class="container-fluid py-lg-5 py-md-3 px-0">
+            <div class="row no-gutters">
+                <div class="col-lg-7 about-right-faq align-self mt-lg-0 mt-sm-5 mt-4 pr-lg-5 order-lg-1 order-2">
+                    <div class="pl-lg-5 ml-auto" style="max-width: 650px;">
+                        <h6 class="sub-titlehny text-left">Philosophy</h6>
+                        <h3 class="hny-title mb-4 text-left" style="font-size: 40px; margin-left: 0; max-width: 100%;">
+                            理念</h3>
+                        <div class="separatorhny"></div>
+                        <p class="">
+                            古河會は、科学的分析とビッグデータを融合し、古美術・アンティーク市場に「客観的かつ検証可能な価値基準」をもたらします。
+                            元素分析やAI識別、ブロックチェーン技術を駆使し、資産の真正性とトレーサビリティを確立。<br>
+                            世界中の美術館やオークションハウスと連携したデジタル標準を構築することで、文化資産のグローバルな流通と価値転換を強力に推進します。
+                        </p>
+                        <div class="mt-4">
+                            <a class="btn btn-primary btn-style" href="platform-overview.html">プラットフォーム概要</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-md-0 mt-4">
-                    <div class="row">
-                        <div class="col-md-6 top-1">
-                            <div class="top-pic2">
-                                <div class="card-body blog-details">
-                                    <p>行业新闻</p>
-                                    <a href="blog-single.html" class="blog-desc">AI技术在古董断代中的应用前景分析
-                                    </a>
-                                    <div class="author align-items-center">
-                                        <img src="assets/images/admin.jpg" alt="" class="img-fluid rounded-circle">
-                                        <ul class="blog-meta">
-                                            <li class="meta-item blog-lesson">
-                                                <span class="meta-value"> 2024年10月10日 </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 top-1 mt-md-0 mt-4">
-                            <div class="top-pic3">
-                                <div class="card-body blog-details">
-                                    <p>技术突破</p>
-                                    <a href="blog-single.html" class="blog-desc">XRF光谱分析仪在陶瓷鉴定中的新发现
-                                    </a>
-                                    <div class="author align-items-center">
-                                        <img src="assets/images/admin.jpg" alt="" class="img-fluid rounded-circle">
-                                        <ul class="blog-meta">
-                                            <li class="meta-item blog-lesson">
-                                                <span class="meta-value">2024年9月28日</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="readhny-btm text-center mx-auto mt-md-4">
-                    <a class="btn btn-primary btn-style mt-md-5 mt-4" href="news.html">查看更多</a>
+                <div class="col-lg-5 col-12 left-wthree-img px-0 order-lg-2 order-1">
+                    <img src="assets/images/p3.jpg" alt="" class="img-fluid w-100"
+                        style="object-fit: cover; height: 100%;">
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- middle -->
     <div class="middle py-5">
         <div class="container py-md-4">
             <div class="welcome-left text-left py-lg-4">
-                <h3 class="hny-title mb-4">关于古河會</h3>
+                <h3 class="hny-title mb-4">古河會について</h3>
                 <div class="separatorhny"></div>
-                <p class="pr-lg-5 mr-lg-5">古河會正在筹备建设一家
-                    面向企业与机构客户的高价值资产数据与流通平台，
-                    该平台定位为长期基础设施型业务，
-                    而非单一鉴定或拍卖服务。
+                <p class="pr-lg-5 mr-lg-5">
+                    古河會は、企業および機関投資家の皆様を対象とした、高価値資産のデータ管理と流通を支えるプラットフォームの構築を推進しています。
+                    当プラットフォームは、単なる鑑定やオークションの代行サービスにとどまりません。資産の真価を次世代へと繋ぐ、長期的な「業界標準インフラ」としての役割を担い、高価値資産市場の健全な発展を支える基盤業務を展開してまいります。
                 </p>
-                <a href="about.html" class="btn btn-style btn-white mt-sm-5 mt-4 mr-2">更多信息</a>
-                <a href="contact.html" class="btn btn-style btn-primary mt-sm-5 mt-4">联系我们</a>
+                <a href="about.html" class="btn btn-style btn-white mt-sm-5 mt-4 mr-2">詳しく見る</a>
+                <a href="contact.html" class="btn btn-style btn-primary mt-sm-5 mt-4">お問い合わせ</a>
             </div>
         </div>
     </div>
@@ -330,12 +214,29 @@
                 <div class="row footer-top-29">
                     <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5">
                         <div class="footer-logo mb-3">
-                            <a class="navbar-brand" href="index.html">株式会社古河會</a>
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo.svg" alt="株式会社古河會"
+                                    style="height:60px; filter: brightness(0) invert(1);">
+                            </a>
                         </div>
-                        <p>株式会社古河會 总部位于日本京都，是一家以古董断代溯源大数据平台为核心的文化资产科技企业，
-                            专注于艺术品拍卖、文化资产数字化与科学断代鉴定。
+                        <p>
+                            株式会社古河會 ｜ KOGAKAI Co., Ltd.
                         </p>
                         <div class="main-social-footer-29 mt-4">
+                            <a href="#line" class="line" style="position:relative;">
+                                <span class="fa fa-commenting"></span>
+                                <img src="assets/images/line.png"
+                                    style="position:absolute;top:110%;left:50%;transform:translateX(-50%);display:none;z-index:10;width:200px;"
+                                    class="line-qr">
+                            </a>
+                            <script>
+                                document.querySelector('.line').addEventListener('mouseenter', function () {
+                                    this.querySelector('.line-qr').style.display = 'block';
+                                });
+                                document.querySelector('.line').addEventListener('mouseleave', function () {
+                                    this.querySelector('.line-qr').style.display = 'none';
+                                });
+                            </script>
                             <a href="#weixin" class="weixin" style="position:relative;">
                                 <span class="fa fa-weixin"></span>
                                 <img src="assets/images/wechat1.png"
@@ -364,53 +265,39 @@
                                     this.querySelector('.wechat-qr').style.display = 'none';
                                 });
                             </script>
-                            <a href="#line" class="line" style="position:relative;">
-                                <span class="fa fa-commenting"></span>
-                                <img src="assets/images/line.png"
-                                    style="position:absolute;top:110%;left:50%;transform:translateX(-50%);display:none;z-index:10;width:200px;"
-                                    class="line-qr">
-                            </a>
-                            <script>
-                                document.querySelector('.line').addEventListener('mouseenter', function () {
-                                    this.querySelector('.line-qr').style.display = 'block';
-                                });
-                                document.querySelector('.line').addEventListener('mouseleave', function () {
-                                    this.querySelector('.line-qr').style.display = 'none';
-                                });
-                            </script>
                             
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-sm-0 mt-5">
 
                         <ul>
-                            <h6 class="footer-title-29">相关技术</h6>
-                            <li><a href="platform-overview.html#technology">技术能力</a></li>
-                            <li><a href="platform-overview.html#asset-id">资产唯一身份</a></li>
-                            <li><a href="platform-overview.html#database">资产数据库</a></li>
-                            <li><a href="platform-overview.html#commercialization">商业化系统</a></li>
-                            <li><a href="platform-overview.html#finance">资产金融化</a></li>
-                            <li><a href="platform-overview.html#solutions">行业解决方案</a></li>
+                            <h6 class="footer-title-29">関連技術</h6>
+                            <li><a href="platform-overview.html#technology">技術力</a></li>
+                            <li><a href="platform-overview.html#asset-id">資産の一意識別</a></li>
+                            <li><a href="platform-overview.html#database">資産データベース</a></li>
+                            <li><a href="platform-overview.html#commercialization">商業化システム</a></li>
+                            <li><a href="platform-overview.html#finance">資産の金融化</a></li>
+                            <li><a href="platform-overview.html#solutions">業界別ソリューション</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-3 mt-lg-0 mt-5">
-                        <h6 class="footer-title-29">更多信息</h6>
+                        <h6 class="footer-title-29">詳細情報</h6>
                         <ul>
-                            <li><a href="about.html">公司信息</a></li>
-                            <li><a href="news.html">新闻与背书</a></li>
-                            <li><a href="contact.html">联系我们</a></li>
+                            <li><a href="about.html">企業情報</a></li>
+                            <li><a href="news.html">ニュース</a></li>
+                            <li><a href="contact.html">お問い合わせ</a></li>
                         </ul>
 
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
-                        <h6 class="footer-title-29">联系信息 </h6>
-                        <p><strong>地址 :</strong> 〒603-8835 京都府京都市北区大宮西総門口町42-1 古河ビル</p>
-                        <p class="my-2"><strong>电话 :</strong> <a href="tel:+(81) 075-468-1620">+(81) 075-468-1620</a>
+                        <h6 class="footer-title-29">連絡先情報 </h6>
+                        <p><strong>住所 :</strong> 〒603-8835 京都府京都市北区大宮西総門口町42-1 古河ビル</p>
+                        <p class="my-2"><strong>電話 :</strong> <a href="tel:+(81) 075-468-1620">+(81) 075-468-1620</a>
                         </p>
                         <p><strong>Email :</strong> <a
                                 href="mailto:yoshinaga.nao1982@gmail.com">yoshinaga.nao1982@gmail.com</a></p>
 
-                        
+
                     </div>
                 </div>
             </div>
