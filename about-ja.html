@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>会社情報</title>
+    <title>企業情報</title>
     <!--/google-fonts-->
     <!--//google-fonts-->
     <!-- Template CSS -->
@@ -36,7 +36,7 @@
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item active">
-                            <a class="nav-link" href="about-ja.html">会社情報</a>
+                            <a class="nav-link" href="about-ja.html">企業情報</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="platform-overview-ja.html" id="navbarDropdown"
@@ -90,11 +90,74 @@
             <div class="container">
                 <ul class="breadcrumbs-custom-path">
                     <li><a href="index-ja.html">ホームページ</a></li>
-                    <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>会社情報</li>
+                    <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>企業情報</li>
                 </ul>
             </div>
         </section>
     </div>
+
+<style>
+        /* Custom style to override the default height for news page cards */
+        .w3l-homeblog .top-pic1,
+        .w3l-homeblog .top-pic2,
+        .w3l-homeblog .top-pic3,
+        .w3l-homeblog .top-pic4,
+        .w3l-homeblog .top-pic5,
+        .w3l-homeblog .top-pic6 {
+            height: 350px;
+            /* Reduced height from 450px */
+        }
+
+        .w3l-homeblog .blog-desc {
+            font-size: 1.2rem;
+            /* Slightly smaller font for titles */
+            color: #fff;
+            font-weight: 700;
+            display: block;
+            margin: 0.6rem 0 1rem 0;
+        }
+
+        .w3l-homeblog .blog-desc:hover {
+            color: #fff;
+        }
+    </style>
+    <div class="w3l-homeblog py-5" id="news">
+        <div class="container py-lg-5 py-md-4">
+            <div class="row">
+                <!-- Item 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="news/news-detail.html" class="d-block text-decoration-none">
+                        <div class="top-pic1" style="background: url(./assets/images/ceo.jpg)">
+                            <div class="card-body blog-details">
+                                <span class="blog-desc">トップメッセージ</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Item 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="news/news-detail.html" class="d-block text-decoration-none">
+                        <div class="top-pic2">
+                            <div class="card-body blog-details">
+                                <span class="blog-desc">AI技术在古董断代中的应用前景分析</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Item 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="news/news-detail.html" class="d-block text-decoration-none">
+                        <div class="top-pic3">
+                            <div class="card-body blog-details">
+                                <span class="blog-desc">XRF光谱分析仪在陶瓷鉴定中的新发现</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- //content-1-->
     <section class="w3l-bottom-grids-6 py-5" id="features" style="background-color: var(--bg-color);">
         <div class="container py-lg-5 py-md-4">
@@ -382,10 +445,13 @@
                 <div class="row footer-top-29">
                     <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5">
                         <div class="footer-logo mb-3">
-                            <a class="navbar-brand" href="index-ja.html">株式会社古河會</a>
+                            <a class="navbar-brand" href="index-ja.html">
+                                <img src="assets/images/logo.svg" alt="株式会社古河會"
+                                    style="height:60px; filter: brightness(0) invert(1);">
+                            </a>
                         </div>
                         <p>
-                            株式会社古河會は、日本・京都に拠点を置く、文化資産テクノロジー企業です。骨董品の年代推定・追跡を可能にする「鑑定ビッグデータプラットフォーム」を核に、美術品オークション、文化資産のデジタル化、および科学的鑑定ソリューションを展開。テクノロジーの力で、伝統ある文化資産の新たな価値創造に邁進しています。
+                            株式会社古河會 ｜ KOGAKAI Co., Ltd.
                         </p>
                         <div class="main-social-footer-29 mt-4">
                             <a href="#line" class="line" style="position:relative;">
@@ -449,7 +515,7 @@
                     <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-3 mt-lg-0 mt-5">
                         <h6 class="footer-title-29">詳細情報</h6>
                         <ul>
-                            <li><a href="about-ja.html">会社情報</a></li>
+                            <li><a href="about-ja.html">企業情報</a></li>
                             <li><a href="news-ja.html">ニュース</a></li>
                             <li><a href="contact-ja.html">お問い合わせ</a></li>
                         </ul>
@@ -475,7 +541,7 @@
     <section class="w3l-copyright">
         <div class="container">
             <div class="row bottom-copies">
-                <p class="col-lg-8 copy-footer-29">Copyright &copy; 2026. KOGAKAI All rights reserved</p>
+                <p class="col-lg-8 copy-footer-29">Copyright &copy; 2017-2026 KOGAKAI Co., Ltd. All rights reserved</p>
             </div>
         </div>
 
