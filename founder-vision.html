@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>企業情報</title>
+    <title>トップメッセージ</title>
     <!--/google-fonts-->
     <!--//google-fonts-->
     <!-- Template CSS -->
@@ -21,10 +21,6 @@
                 <h1> <a class="navbar-brand" href="index.html">
                         <img src="./assets/images/logo.svg" alt="Advisory Logo" style="height:35px;">
                     </a></h1>
-                <!-- if logo is image enable this   
-    <a class="navbar-brand" href="#index.html">
-        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-    </a> -->
                 <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
                     data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -49,7 +45,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="platform-overview.html" id="navbarDropdown"
                                 role="button" aria-haspopup="true" aria-expanded="false">
-                                プラットフォーム概要
+                                プラットフォーム
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="platform-overview.html#technology">技術力</a>
@@ -60,9 +56,11 @@
                                 <a class="dropdown-item" href="platform-overview.html#solutions">業界別ソリューション</a>
                             </div>
                         </li>
+                        <!--
                         <li class="nav-item">
                             <a class="nav-link" href="news.html">ニュース</a>
                         </li>
+                        -->
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">お問い合わせ</a>
                         </li>
@@ -98,97 +96,59 @@
             <div class="container">
                 <ul class="breadcrumbs-custom-path">
                     <li><a href="index.html">ホームページ</a></li>
-                    <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>企業情報</li>
+                    <li><a href="about.html"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>企業情報</a></li>
+                    <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>トップメッセージ</li>
                 </ul>
             </div>
         </section>
     </div>
 
-<style>
-        /* Custom style to override the default height for news page cards */
-        .w3l-homeblog .top-pic1,
-        .w3l-homeblog .top-pic2,
-        .w3l-homeblog .top-pic3,
-        .w3l-homeblog .top-pic4,
-        .w3l-homeblog .top-pic5,
-        .w3l-homeblog .top-pic6 {
-            height: 350px;
-            /* Reduced height from 450px */
-        }
+    <!--/team-sec-->
+    <section class="w3l-team-main" id="team">
+        <div class="team py-5">
+            <div class="container py-lg-5">
+                <h6 class="sub-titlehny text-center">Founder’s Vision</h6>
+                <h3 class="hny-title mb-md-5 mb-5 text-center">創業の想い</h3>
+                <div class="row team-row mt-md-5 mt-4">
+                    <div class="col-lg-3 col-6 team-wrap">
+                        <div class="team-member text-center">
+                            <div class="team-img">
+                                <img src="assets/images/ceo.jpg" alt="吉永奈央" class="radius-image">
+                            </div>
+                            <a href="#url" class="team-title">吉永 奈央</a>
+                            <p>株式会社古河會<br>創業者 兼 代表取締役</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 mt-4 mt-lg-0 pl-lg-5">
+                        <div class="text-left">
+                            <p>十余年にわたる日中の美術品流通およびオークション事業を通じて、私は一貫してある一つの信念を抱き続けてきました。</p>
+                            <p>それは、<strong>「文化資産は歴史や美学を象徴するだけでなく、世界と未来を繋ぐ重要な架け橋である」</strong>ということです。</p>
 
-        .w3l-homeblog .blog-desc {
-            font-size: 1.2rem;
-            /* Slightly smaller font for titles */
-            color: #fff;
-            font-weight: 700;
-            display: block;
-            margin: 0.6rem 0 1rem 0;
-        }
+                            <p class="mt-4 mb-2">私の確信：</p>
+                            <ul class="list-unstyled mt-2">
+                                <li><span class="fa fa-angle-right mr-2"></span>文化資産の真の価値は、正確に見出され、尊重されるべきである</li>
+                                <li><span class="fa fa-angle-right mr-2"></span>取引における信頼体系は、テクノロジーと標準化によって築かれるべきである</li>
+                                <li><span class="fa fa-angle-right mr-2"></span>業界の発展は、商業的効率と文化の継承が共存しなければならない</li>
+                            </ul>
 
-        .w3l-homeblog .blog-desc:hover {
-            color: #fff;
-        }
-    </style>
-    <div class="w3l-homeblog py-5" id="news">
-        <div class="container py-lg-5 py-md-4">
-            <div class="row">
-                <!-- Item 1 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="founder-vision.html" class="d-block text-decoration-none">
-                        <div class="top-pic1" style="background: url(./assets/images/ceo.jpg)">
-                            <div class="card-body blog-details">
-                                <span class="blog-desc">トップメッセージ</span>
-                            </div>
+                            <p class="mt-4 mb-2">その想いから、私は以下の志を立てました：</p>
+                            <ol class="pl-4">
+                                <li>テクノロジーで文化資産に新たな力を吹き込み、業界の標準化と国際化を推進すること。</li>
+                                <li>安全かつ透明性の高い取引環境を構築し、世界中のコレクターや機関との相互信頼・共生を実現すること。</li>
+                                <li>持続可能な循環型経済プラットフォームを築き、多くのパートナーと業界の発展を分かち合うこと。</li>
+                            </ol>
+
+                            <p class="mt-4 text-muted" style="line-height: 1.8;">
+                                現在の古河會は、単なるオークション会社ではありません。「テクノロジー × ビジネス × コミュニティ」を融合させた、文化資産の循環型経済プラットフォームです。
+                                私たちはイノベーションによって業界のアップグレードを牽引し、信頼と価値が世界中で自由に流通する未来を創造してまいります。
+                            </p>
                         </div>
-                    </a>
-                </div>
-                <!-- Item 2 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="business-model.html" class="d-block text-decoration-none">
-                        <div class="top-pic2">
-                            <div class="card-body blog-details">
-                                <span class="blog-desc">経営理念</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- Item 3 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="company-profile.html" class="d-block text-decoration-none">
-                        <div class="top-pic3">
-                            <div class="card-body blog-details">
-                                <span class="blog-desc">会社概要</span>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- //content-1-->
-
-    <!-- /form-25-section -->
-    <section class="w3l-form-25-section" id="subscribe">
-        <!-- /form-25-section -->
-        <div class="form-25-mian">
-            <div class="container py-5">
-                <div class="row subscription-grids py-5">
-                    <div class="col-lg-7 subscription-left forms-25-info">
-                        <div class="header-title">
-                            <h3 class="p-0">古河會の会社概要・詳細情報を見る</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 subscription-right pl-lg-5 mt-lg-0 mt-4 text-lg-right">
-                        <a href="assets/pdf/kogakai_jp.pdf" class="btn btn-style btn-white mr-lg-4 mr-sm-3">
-                            <span class="fa fa-file-pdf-o"></span> 会社案内（PDF）を見る
-                        </a>
-                    </div>
-                </div>
-            </div>
     </section>
-    <!-- //form-25-section -->
-
+    <!--//team-sec-->
 
     <!-- footer -->
     <section class="w3l-footer-29-main">
@@ -280,7 +240,7 @@
                         <p><strong>Email :</strong> <a
                                 href="mailto:yoshinaga.nao1982@gmail.com">yoshinaga.nao1982@gmail.com</a></p>
 
-                        
+
                     </div>
                 </div>
             </div>
@@ -293,6 +253,9 @@
         <div class="container">
             <div class="row bottom-copies">
                 <p class="col-lg-8 copy-footer-29">Copyright &copy; 2017-2026 KOGAKAI Co., Ltd. All rights reserved</p>
+                <p class="col-lg-4 copy-footer-29 text-right">
+                    <a href="privacy.html">個人情報保護方針</a>
+                </p>
             </div>
         </div>
 

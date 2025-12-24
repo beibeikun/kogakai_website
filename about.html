@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>会社概要 | 株式会社古河會</title>
+    <title>企業情報</title>
     <!--/google-fonts-->
     <!--//google-fonts-->
     <!-- Template CSS -->
@@ -21,6 +21,10 @@
                 <h1> <a class="navbar-brand" href="index.html">
                         <img src="./assets/images/logo.svg" alt="Advisory Logo" style="height:35px;">
                     </a></h1>
+                <!-- if logo is image enable this   
+    <a class="navbar-brand" href="#index.html">
+        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+    </a> -->
                 <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
                     data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -45,7 +49,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="platform-overview.html" id="navbarDropdown"
                                 role="button" aria-haspopup="true" aria-expanded="false">
-                                プラットフォーム概要
+                                プラットフォーム
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="platform-overview.html#technology">技術力</a>
@@ -56,9 +60,11 @@
                                 <a class="dropdown-item" href="platform-overview.html#solutions">業界別ソリューション</a>
                             </div>
                         </li>
+                        <!--
                         <li class="nav-item">
                             <a class="nav-link" href="news.html">ニュース</a>
                         </li>
+                        -->
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">お問い合わせ</a>
                         </li>
@@ -94,86 +100,97 @@
             <div class="container">
                 <ul class="breadcrumbs-custom-path">
                     <li><a href="index.html">ホームページ</a></li>
-                    <li><a href="about.html"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>企業情報</a></li>
-                    <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>会社概要</li>
+                    <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>企業情報</li>
                 </ul>
             </div>
         </section>
     </div>
 
-    <section class="w3l-bottom-grids-6 py-5" id="profile" style="background-color: var(--bg-color);">
-        <div class="container py-lg-5 py-md-4">
-            <div class="row mb-4">
-                <div class="col-12 text-center">
-                    <h3 class="hny-title mb-4">会社概要</h3>
-                    <div class="separatorhny mx-auto"></div>
-                </div>
-            </div>
+<style>
+        /* Custom style to override the default height for news page cards */
+        .w3l-homeblog .top-pic1,
+        .w3l-homeblog .top-pic2,
+        .w3l-homeblog .top-pic3,
+        .w3l-homeblog .top-pic4,
+        .w3l-homeblog .top-pic5,
+        .w3l-homeblog .top-pic6 {
+            height: 350px;
+            /* Reduced height from 450px */
+        }
 
+        .w3l-homeblog .blog-desc {
+            font-size: 1.2rem;
+            /* Slightly smaller font for titles */
+            color: #fff;
+            font-weight: 700;
+            display: block;
+            margin: 0.6rem 0 1rem 0;
+        }
+
+        .w3l-homeblog .blog-desc:hover {
+            color: #fff;
+        }
+    </style>
+    <div class="w3l-homeblog py-5" id="news">
+        <div class="container py-lg-5 py-md-4">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <table class="table table-borderless">
-                        <tbody>
-                            <tr>
-                                <th scope="row" style="width: 30%;">会社名</th>
-                                <td>株式会社古河會</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">北区事務所</th>
-                                <td>〒603-8835 京都府京都市北区大宮西総門口町42-1 古河ビル</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">店舗</th>
-                                <td>古河美術<br>〒602-8453 京都府京都市上京区笹屋町三丁目641 西陣セントラルハイツ 102号</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">代表</th>
-                                <td>吉永 奈央</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">設立</th>
-                                <td>2013年7月10日</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">TEL</th>
-                                <td>075-468-1620</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">事業内容</th>
-                                <td>
-                                    ❖ オークション事業 /「古河會」「堺川会」<br>
-                                    ❖ リュース業経営者育成スクール事業 /「古河商学院」<br>
-                                    ❖ 買取店舗運営事業<br>
-                                    ❖ フランチャイズ事業
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">古物商許可証</th>
-                                <td>第 611211330023 号</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">古物市場主許可証</th>
-                                <td>第 62102R037503 号</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <!-- Item 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="founder-vision.html" class="d-block text-decoration-none">
+                        <div class="top-pic1" style="background: url(./assets/images/ceo.jpg)">
+                            <div class="card-body blog-details">
+                                <span class="blog-desc">トップメッセージ</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            
-            <div class="row mt-5">
-                <div class="col-12 text-center">
-                    <h3 class="hny-title mb-4">当社ご案内図</h3>
-                    <div class="separatorhny mx-auto mb-4"></div>
-                    <p class="mb-4">〒603-8835 京都府京都市北区大宮西総門口町42-1 古河芸術センター</p>
-                    <div class="map-iframe">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26134.675039701888!2d135.73239179990702!3d35.03587300207319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a951ad1e633d%3A0xa034a30377c6453c!2z5Y-k5rKz5pyD44Kq44O844Kv44K344On44Oz!5e0!3m2!1sja!2sjp!4v1766458256626!5m2!1sja!2sjp"
-                            width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe>
-                    </div>
+                <!-- Item 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="business-model.html" class="d-block text-decoration-none">
+                        <div class="top-pic2">
+                            <div class="card-body blog-details">
+                                <span class="blog-desc">経営理念</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Item 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="company-profile.html" class="d-block text-decoration-none">
+                        <div class="top-pic3">
+                            <div class="card-body blog-details">
+                                <span class="blog-desc">会社概要</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- //content-1-->
+
+    <!-- /form-25-section -->
+    <section class="w3l-form-25-section" id="subscribe">
+        <!-- /form-25-section -->
+        <div class="form-25-mian">
+            <div class="container py-5">
+                <div class="row subscription-grids py-5">
+                    <div class="col-lg-7 subscription-left forms-25-info">
+                        <div class="header-title">
+                            <h3 class="p-0">古河會の会社概要・詳細情報を見る</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 subscription-right pl-lg-5 mt-lg-0 mt-4 text-lg-right">
+                        <a href="assets/pdf/kogakai_jp.pdf" class="btn btn-style btn-white mr-lg-4 mr-sm-3">
+                            <span class="fa fa-file-pdf-o"></span> 会社案内（PDF）を見る
+                        </a>
+                    </div>
+                </div>
+            </div>
     </section>
+    <!-- //form-25-section -->
+
 
     <!-- footer -->
     <section class="w3l-footer-29-main">
@@ -233,6 +250,7 @@
                                     this.querySelector('.wechat-qr').style.display = 'none';
                                 });
                             </script>
+                            
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-sm-0 mt-5">
@@ -264,7 +282,7 @@
                         <p><strong>Email :</strong> <a
                                 href="mailto:yoshinaga.nao1982@gmail.com">yoshinaga.nao1982@gmail.com</a></p>
 
-
+                        
                     </div>
                 </div>
             </div>
@@ -277,6 +295,9 @@
         <div class="container">
             <div class="row bottom-copies">
                 <p class="col-lg-8 copy-footer-29">Copyright &copy; 2017-2026 KOGAKAI Co., Ltd. All rights reserved</p>
+                <p class="col-lg-4 copy-footer-29 text-right">
+                    <a href="privacy.html">個人情報保護方針</a>
+                </p>
             </div>
         </div>
 
