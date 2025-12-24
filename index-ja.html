@@ -30,9 +30,16 @@
 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ml-auto">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-ja.html">企業情報</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="about-ja.html" id="navbarDropdown"
+                                role="button" aria-haspopup="true" aria-expanded="false">
+                                企業情報
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="founder-vision-ja.html">トップメッセージ</a>
+                                <a class="dropdown-item" href="business-model-ja.html">経営理念</a>
+                                <a class="dropdown-item" href="company-profile-ja.html">会社概要</a>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="platform-overview-ja.html" id="navbarDropdown"
@@ -183,74 +190,6 @@
             </div>
         </div>
     </section>
-    <!-- //stats -->
-    <div class="w3l-homeblog py-5" id="homeblog" style="background: var(--bg-lightgrey);">
-        <div class="container py-lg-5 py-md-4">
-            <h6 class="sub-titlehny text-center">News & Updates</h6>
-            <h3 class="hny-title mb-md-5 mb-4 pb-md-0 pb-2 text-center">ニュース & トピックス</h3>
-            <div class="row top-pics">
-                <div class="col-lg-6 col-md-6">
-                    <div class="top-pic1">
-                        <div class="card-body blog-details">
-                            <p>プレスリリース</p>
-                            <a href="blog-single.html" class="blog-desc">古河會、京都国立博物館との戦略的提携に向けた基本合意のお知らせ
-                            </a>
-                            <div class="author align-items-center">
-                                <img src="assets/images/admin.jpg" alt="" class="img-fluid rounded-circle">
-                                <ul class="blog-meta">
-                                    <li class="meta-item blog-lesson">
-                                        <span class="meta-value"> 2024.10.15 </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mt-md-0 mt-4">
-                    <div class="row">
-                        <div class="col-md-6 top-1">
-                            <div class="top-pic2">
-                                <div class="card-body blog-details">
-                                    <p>インサイト</p>
-                                    <a href="blog-single.html" class="blog-desc">骨董品の年代推定におけるAI技術の活用と将来展望
-                                    </a>
-                                    <div class="author align-items-center">
-                                        <img src="assets/images/admin.jpg" alt="" class="img-fluid rounded-circle">
-                                        <ul class="blog-meta">
-                                            <li class="meta-item blog-lesson">
-                                                <span class="meta-value"> 2024.10.10 </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 top-1 mt-md-0 mt-4">
-                            <div class="top-pic3">
-                                <div class="card-body blog-details">
-                                    <p>テクノロジー</p>
-                                    <a href="blog-single.html" class="blog-desc">XRFスペクトル分析による陶磁器鑑定の新たな発見
-                                    </a>
-                                    <div class="author align-items-center">
-                                        <img src="assets/images/admin.jpg" alt="" class="img-fluid rounded-circle">
-                                        <ul class="blog-meta">
-                                            <li class="meta-item blog-lesson">
-                                                <span class="meta-value">2024.09.28</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="readhny-btm text-center mx-auto mt-md-4">
-                    <a class="btn btn-primary btn-style mt-md-5 mt-4" href="news.html">もっと見る</a>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- middle -->
     <div class="middle py-5">
         <div class="container py-md-4">
@@ -326,8 +265,7 @@
                                     this.querySelector('.wechat-qr').style.display = 'none';
                                 });
                             </script>
-                            <a href="https://github.com/beibeikun/kogakai_website" class="github"><span
-                                    class="fa fa-github"></span></a>
+                            
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-sm-0 mt-5">

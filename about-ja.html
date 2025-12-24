@@ -35,8 +35,16 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ml-auto">
 
-                        <li class="nav-item active">
-                            <a class="nav-link" href="about-ja.html">企業情報</a>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="about-ja.html" id="navbarDropdown"
+                                role="button" aria-haspopup="true" aria-expanded="false">
+                                企業情報
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="founder-vision-ja.html">トップメッセージ</a>
+                                <a class="dropdown-item" href="business-model-ja.html">経営理念</a>
+                                <a class="dropdown-item" href="company-profile-ja.html">会社概要</a>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="platform-overview-ja.html" id="navbarDropdown"
@@ -240,8 +248,7 @@
                                     this.querySelector('.wechat-qr').style.display = 'none';
                                 });
                             </script>
-                            <a href="https://github.com/beibeikun/kogakai_website" class="github"><span
-                                    class="fa fa-github"></span></a>
+                            
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-sm-0 mt-5">
