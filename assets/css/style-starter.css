@@ -17363,3 +17363,16 @@ button.owl-next {
 }
 
 /*# sourceMappingURL=style-freedom.css.map */
+
+/* Scroll Reveal Animation */
+.reveal {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
