@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform | 古河會</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo_icononly.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script src="./assets/js/tailwind.js"></script>
+    <style>
+        /* Custom Grid Background Class */
+        .bg-grid {
+            background-image: linear-gradient(to right, #00000030 1px, transparent 1px), linear-gradient(to bottom, #00000030 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-600 font-sans antialiased selection:bg-slate-200 selection:text-slate-900">
+
+    <!-- Navbar (Linear Style) -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Header Section -->
+    <section class="relative pt-32 pb-20 border-b border-slate-200 bg-white">
+        <div class="absolute top-0 right-0 bottom-0 w-full overflow-hidden z-0 pointer-events-none" aria-hidden="true">
+            <img src="./assets/images/platform_header_bg.svg" alt="Background Pattern" class="absolute top-0 right-0 h-full w-full opacity-30">
+        </div>
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-4">
+                <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
+                    Platform
+                </span>
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                資産の物理的真実を構造化データとして永続化し、<br>
+                次世代の流通を支える信頼の基盤を構築します。
+            </p>
+        </div>
+        <div class="absolute top-0 right-0 bottom-0 w-full overflow-hidden z-0 pointer-events-none opacity-30">
+            <div class="absolute inset-0 bg-grid"></div>
+        </div>
+    </section>
+
+    <!-- Mission & Infrastructure (Bento/Linear Grid) -->
+    <section id="company" class="bg-white py-24">
+        <div class="max-w-[1440px] mx-auto space-y-16">
+            <!-- Section 1 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 border border-slate-200" id="s1">
+                <div class="p-6 md:p-10 lg:p-12 order-2 lg:order-1 flex flex-col justify-center">
+                    <h3 class="text-sm font-medium text-slate-800 mb-2">
+                        <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
+                            Global Hub for High-Value Asset Intelligence & Liquidity
+                        </span>
+                    </h3>
+                    <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">
+                        バリュー・ネクサス
+                    </h2>
+                    <p class="text-base text-slate-600 leading-loose mb-4">
+                        古河會は、法人および機関投資家を対象とした、高価値資産のデータ管理と流通を支える次世代プラットフォームの構築を推進しています。
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-500 font-medium">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            検証 (Verification)
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            ID・権利確定 (Identity)
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            データ (Data)
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            応用 (Application)
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="order-1 lg:order-2 bg-slate-50 lg:border-l border-slate-200">
+                    <img src="./assets/images/platform_value_nexus.svg" alt="Value Nexus Diagram" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 border border-slate-200" id="s2">
+                <div
+                    class="bg-slate-50 border-b lg:border-b-0 lg:border-r border-slate-200">
+                    <img src="./assets/images/platform_technology.svg" alt="Technology Stack" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 md:p-10 lg:p-12 flex flex-col justify-center">
+                    <h3 class="text-lg font-medium text-slate-800 mb-2">
+                        <span
+                            class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">Technology</span>
+                    </h3>
+                    <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">
+                        テクノロジー
+                    </h2>
+                    <p class="text-base text-slate-600 leading-loose mb-4">
+                        古河會は、AI画像解析、XRF成分分析、およびグローバルな分散データベース・アーキテクチャなど、多岐にわたる基幹技術によって支えられています。
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-500 font-medium">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4">
+                                </path>
+                            </svg>
+                            構造化プロトコル
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                </path>
+                            </svg>
+                            持続型データモデル
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z">
+                                </path>
+                            </svg>
+                            次世代コア技術
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 border border-slate-200" id="s3">
+                <div class="p-6 md:p-10 lg:p-12 order-2 lg:order-1 flex flex-col justify-center">
+                    <h3 class="text-lg font-medium text-slate-800 mb-2">
+                        <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
+                            Asset ID
+                        </span>
+                    </h3>
+                    <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">
+                        デジタルID
+                    </h2>
+                    <p class="text-base text-slate-600 leading-loose mb-4">
+                        資産ごとに検証可能かつ複製不可能なデジタル・アイデンティティ（Asset ID）の発行体系を構築しています。<br>
+                        本システムは以下の構成を予定しています：
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-500 font-medium">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            物理的識別ソリューション（Micro-ID等）
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            デジタルログの紐付け技術
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            システムレベルの管理インターフェース
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="order-1 lg:order-2 bg-slate-50 lg:border-l border-slate-200">
+                    <img src="./assets/images/platform_digital_id.svg" alt="Digital ID" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 border border-slate-200" id="s4">
+                <div
+                    class="bg-slate-50 border-b lg:border-b-0 lg:border-r border-slate-200">
+                    <img src="./assets/images/platform_asset_database.svg" alt="Asset Database" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 md:p-10 lg:p-12 flex flex-col justify-center">
+                    <h3 class="text-lg font-medium text-slate-800 mb-2">
+                        <span
+                            class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
+                            Asset Database
+                        </span>
+                    </h3>
+                    <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">
+                        アセット・データベース
+                    </h2>
+                    <p class="text-base text-slate-600 leading-loose mb-4">
+                        当プラットフォームが構築を進めるデータベースは、以下の要素を段階的に統合してまいります：
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-500 font-medium">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            資産の基本メタデータ
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            成分・材質分析データ
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            画像および外観特徴データ
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            流通・取引履歴ログ
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            リスク管理および評価補助インデックス
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 5 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 border border-slate-200" id="s5">
+                <div class="p-6 md:p-10 lg:p-12 order-2 lg:order-1 flex flex-col justify-center">
+                    <h3 class="text-lg font-medium text-slate-800 mb-2">
+                        <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
+                            Commercialization
+                        </span>
+                    </h3>
+                    <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">
+                        ビジネス・ソリューション
+                    </h2>
+                    <ul class="space-y-2 text-sm text-slate-500 font-medium">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                </path>
+                            </svg>
+                            SaaSソリューション
+                        </li>
+                        <li class="flex items-center">
+                            資産の登録・流通管理から企業ガバナンスまで、必要な機能を一元化した法人向けSaaSを構築しています。
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4">
+                                </path>
+                            </svg>
+                            API連携機能
+                        </li>
+                        <li class="flex items-center">
+                            検証データやリスク分析機能を外部システムとシームレスに連携させる、法人向けAPIの提供を予定しています。
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                </path>
+                            </svg>
+                            ビジネスモデル
+                        </li>
+                        <li class="flex items-center">
+                            サブスクリプション、従量課金、エンタープライズ対応など、多様な利用形態に即した柔軟な料金体系を導入します。
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="order-1 lg:order-2 bg-slate-50 lg:border-l border-slate-200">
+                    <img src="./assets/images/platform_business_solutions.svg" alt="Business Solutions" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Section 6 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 border border-slate-200" id="s6">
+                <div
+                    class="bg-slate-50 border-b lg:border-b-0 lg:border-r border-slate-200">
+                    <img src="./assets/images/platform_asset_finance.svg" alt="Asset Finance" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 md:p-10 lg:p-12 flex flex-col justify-center">
+                    <h3 class="text-lg font-medium text-slate-800 mb-2">
+                        <span
+                            class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">Asset Finance</span>
+                    </h3>
+                    <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">
+                        アセットファイナンス
+                    </h2>
+                    <p class="text-base text-slate-600 leading-loose mb-4">
+                        当プラットフォームは「金融システムが参照可能な、検証済みのデータ基盤の提供」を主要な研究および提携領域の一つとして掲げています。
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-500 font-medium">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 4h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2z M8 8h8 M8 12h8 M8 16h8">
+                                </path>
+                            </svg>
+                            資産記録の標準化プロトコル
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4l7 4v5c0 5-3.5 8-7 10-3.5-2-7-5-7-10V8l7-4z M9 12l2 2 4-4">
+                                </path>
+                            </svg>
+                            リスク管理・評価補助データの提供
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4l9 5H3l9-5z M4 11v7 M8 11v7 M12 11v7 M16 11v7 M20 11v7 M3 20h18">
+                                </path>
+                            </svg>
+                            金融機関向けシステム連携インターフェース
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 7 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 border border-slate-200" id="s7">
+                <div class="p-6 md:p-10 lg:p-12 order-2 lg:order-1 flex flex-col justify-center">
+                    <h3 class="text-lg font-medium text-slate-800 mb-2">
+                        <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
+                            Solutions
+                        </span>
+                    </h3>
+                    <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">
+                        ソリューション
+                    </h2>
+                    <p class="text-base text-slate-600 leading-loose mb-4">
+                        古河會は現在、以下の領域におけるユースケースの創出と社会実装に注力しています：
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-500 font-medium">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 3l3 3-3 3 M8 21l-3-3 3-3 M3 12a9 9 0 019-9M12 21a9 9 0 01-9-9"></path>
+                            </svg>
+                            ラグジュアリー・リユース
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 14l6-6 3 3-6 6-3-3 M12 5l3 3-2 2-3-3 2-2 M5 19h6v2H5z"></path>
+                            </svg>
+                            オークションハウス・取引所
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 8h16a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2v-8a2 2 0 012-2z M9 5h6a2 2 0 012 2v3H7V7a2 2 0 012-2z"></path>
+                            </svg>
+                            コレクター・資産管理
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="order-1 lg:order-2 bg-slate-50 lg:border-l border-slate-200">
+                    <img src="./assets/images/platform_solutions.svg" alt="Solutions" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Structured) -->
+    <div id="footer-placeholder"></div>
+    <div class="max-w-[1440px] mx-auto">
+        <div
+            class="border-t border-slate-100 p-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400">
+            <p>Copyright &copy; 2017-2026 KOGAKAI Co., Ltd. All rights reserved.</p>
+            <div class="mt-4 md:mt-0 font-mono">
+                DESIGN_SYSTEM: LINEAR_V1
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+    <script>
+        // 封装加载函数
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                });
+        }
+
+        // 执行加载
+        loadComponent('navbar-placeholder', 'navbar.html');
+        loadComponent('footer-placeholder', 'footer.html');
+    </script>
+
+</body>
+
+</html>

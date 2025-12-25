@@ -1,0 +1,115 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <rect width="100%" height="100%" fill="#f8fafc"/>
+
+    <defs>
+        <!-- Blur Filter for "Unverified" state -->
+        <filter id="blur-sm" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+        </filter>
+        
+        <!-- Gradient for the lens/beam -->
+        <linearGradient id="beam-grad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.1"/>
+            <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.0"/>
+        </linearGradient>
+
+        <radialGradient id="lens-glow" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="0%" stop-color="#eff6ff" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="#eff6ff" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+
+    <!-- Layer 1: The "Fog" / Chaos (Background) -->
+    <g opacity="0.4">
+        <!-- Scattered, blurry dots -->
+        <g fill="#94a3b8">
+            <circle cx="100" cy="100" r="4" filter="url(#blur-sm)" />
+            <circle cx="150" cy="200" r="6" filter="url(#blur-sm)" />
+            <circle cx="50" cy="300" r="3" filter="url(#blur-sm)" />
+            <circle cx="200" cy="50" r="5" filter="url(#blur-sm)" />
+            <circle cx="700" cy="400" r="4" filter="url(#blur-sm)" />
+            <circle cx="650" cy="100" r="6" filter="url(#blur-sm)" />
+            <circle cx="750" cy="500" r="5" filter="url(#blur-sm)" />
+            
+            <!-- Random lines indicating noise -->
+            <path d="M100 150 L120 180" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round" filter="url(#blur-sm)" />
+            <path d="M600 50 L630 80" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round" filter="url(#blur-sm)" />
+            <path d="M50 500 L80 520" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round" filter="url(#blur-sm)" />
+        </g>
+        
+        <!-- Floating "Unverified" Elements -->
+        <rect x="200" y="400" width="40" height="40" stroke="#cbd5e1" stroke-width="2" fill="none" transform="rotate(15)" filter="url(#blur-sm)">
+            <animateTransform attributeName="transform" type="rotate" from="15 220 420" to="375 220 420" dur="20s" repeatCount="indefinite" />
+        </rect>
+        <rect x="600" y="200" width="30" height="30" stroke="#cbd5e1" stroke-width="2" fill="none" transform="rotate(-10)" filter="url(#blur-sm)">
+            <animateTransform attributeName="transform" type="rotate" from="-10 615 215" to="350 615 215" dur="15s" repeatCount="indefinite" />
+        </rect>
+    </g>
+
+    <!-- Layer 2: The "Lens" / Solution (Center) -->
+    <!-- A large circular area that reveals the "Truth" -->
+    <g transform="translate(400, 300)">
+        
+        <!-- Lens Background glow -->
+        <circle cx="0" cy="0" r="180" fill="url(#lens-glow)" />
+        
+        <!-- Orbiting rings -->
+        <circle cx="0" cy="0" r="160" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4 4" opacity="0.5">
+            <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="20s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="0" cy="0" r="140" stroke="#3b82f6" stroke-width="2" opacity="0.8" />
+
+        <!-- The Organized Grid (Only visible near center) -->
+        <g>
+            <defs>
+                <pattern id="hex-grid" width="40" height="34.6" patternUnits="userSpaceOnUse" patternTransform="scale(1.5)">
+                    <path d="M20 0 L40 11.5 V34.6 L20 46.1 L0 34.6 V11.5 Z" fill="none" stroke="#bfdbfe" stroke-width="1" />
+                </pattern>
+            </defs>
+            <circle cx="0" cy="0" r="140" fill="url(#hex-grid)" />
+        </g>
+
+        <!-- Verified Data Points (Blue, Sharp) -->
+        <g fill="#3b82f6">
+            <circle cx="-40" cy="-40" r="6">
+                <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="40" cy="-40" r="6">
+                <animate attributeName="r" values="6;8;6" dur="2s" begin="0.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="-40" cy="40" r="6">
+                <animate attributeName="r" values="6;8;6" dur="2s" begin="1s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="40" cy="40" r="6">
+                <animate attributeName="r" values="6;8;6" dur="2s" begin="1.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="0" cy="0" r="8" fill="#2563eb" />
+        </g>
+        
+        <!-- Connection Lines -->
+        <g stroke="#3b82f6" stroke-width="2">
+            <line x1="-40" y1="-40" x2="0" y2="0" />
+            <line x1="40" y1="-40" x2="0" y2="0" />
+            <line x1="-40" y1="40" x2="0" y2="0" />
+            <line x1="40" y1="40" x2="0" y2="0" />
+        </g>
+
+        <!-- Scanning Line Effect -->
+        <rect x="-140" y="-140" width="280" height="280" fill="url(#beam-grad)" clip-path="circle(140px at center)">
+            <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite" />
+        </rect>
+    </g>
+
+    <!-- Annotations / UI Overlay -->
+    <g transform="translate(560, 250)">
+        <path d="M0 0 L20 -20 H60" stroke="#3b82f6" stroke-width="1" fill="none" />
+        <rect x="60" y="-30" width="80" height="20" rx="4" fill="#3b82f6" />
+        <text x="100" y="-16" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">VERIFIED</text>
+    </g>
+
+    <g transform="translate(240, 350)">
+        <path d="M0 0 L-20 20 H-60" stroke="#94a3b8" stroke-width="1" fill="none" />
+        <text x="-60" y="35" text-anchor="end" font-family="sans-serif" font-size="10" fill="#94a3b8">RAW DATA</text>
+    </g>
+
+</svg>

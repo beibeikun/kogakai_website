@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="w-full h-full" viewBox="0 0 600 340" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <!-- Dot Pattern for the map -->
+                                    <pattern id="dot-pattern" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
+                                        <circle cx="1.5" cy="1.5" r="1" fill="#94a3b8" opacity="0.4" />
+                                    </pattern>
+                                    
+                                    <!-- Gradient for lines -->
+                                    <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#3b82f6" stop-opacity="0" />
+                                        <stop offset="50%" stop-color="#2563eb" stop-opacity="0.8" />
+                                        <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+                                    </linearGradient>
+
+                                    <!-- Map Mask (Simplified World Shape) -->
+                                    <mask id="world-mask">
+                                        <rect width="100%" height="100%" fill="black" />
+                                        <g fill="white">
+                                            <!-- North America -->
+                                            <path d="M30,60 C30,60 70,50 120,50 C160,50 180,80 160,110 C150,125 120,130 110,140 C100,150 110,160 120,170 C130,180 135,190 130,200 L120,280 C115,290 105,300 100,280 C90,240 80,200 70,160 C60,120 30,100 30,60 Z" />
+                                            <!-- South America -->
+                                            <path d="M110,170 C130,170 160,190 150,230 C140,270 130,310 120,300 C110,290 100,250 100,210 C100,190 105,170 110,170 Z" />
+                                            <!-- Europe -->
+                                            <path d="M260,60 C260,60 280,50 300,50 C320,50 330,60 320,80 C310,90 290,95 280,90 C270,85 260,70 260,60 Z" />
+                                            <!-- Africa -->
+                                            <path d="M260,100 C280,100 320,100 340,120 C350,140 360,180 340,220 C320,250 300,240 290,220 C280,200 260,160 250,130 C245,110 250,100 260,100 Z" />
+                                            <!-- Asia -->
+                                            <path d="M330,60 C360,50 450,50 500,70 C530,80 540,110 520,140 C500,160 460,170 430,150 C400,130 360,100 330,60 Z" />
+                                            <!-- SE Asia Islands -->
+                                            <path d="M420,160 C430,160 450,170 440,190 C430,200 410,190 410,170 Z" />
+                                            <path d="M450,180 C460,180 470,190 460,200 C450,210 440,190 450,180 Z" />
+                                            <!-- Australia -->
+                                            <path d="M460,220 C490,220 520,230 510,260 C500,280 470,270 460,250 C450,240 450,230 460,220 Z" />
+                                            <!-- Japan -->
+                                            <ellipse cx="510,110" rx="10" ry="20" transform="rotate(30 510 110)" />
+                                        </g>
+                                    </mask>
+                                </defs>
+                                
+                                <!-- Background Subtle Grid -->
+                                <defs>
+                                    <pattern id="bg-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f1f5f9" stroke-width="1"/>
+                                    </pattern>
+                                </defs>
+                                <rect width="100%" height="100%" fill="url(#bg-grid)" />
+                                
+                                <!-- Dotted Map Layer -->
+                                <rect width="100%" height="100%" fill="url(#dot-pattern)" mask="url(#world-mask)" />
+                                
+                                <!-- Connecting Lines (Curved Geodesic-like) -->
+                                <g fill="none" stroke-width="1.5">
+                                    <!-- Kyoto (510, 110) to New York (145, 105) -->
+                                    <path d="M510 110 Q327 30 145 105" stroke="url(#line-gradient)" stroke-dasharray="6 4" opacity="0.6">
+                                         <animate attributeName="stroke-dashoffset" from="100" to="0" dur="4s" repeatCount="indefinite" />
+                                    </path>
+                                    
+                                    <!-- Kyoto to Hong Kong (460, 135) -->
+                                    <path d="M510 110 Q485 140 460 135" stroke="url(#line-gradient)" stroke-dasharray="6 4" opacity="0.6">
+                                         <animate attributeName="stroke-dashoffset" from="100" to="0" dur="4s" repeatCount="indefinite" />
+                                    </path>
+                                    <!-- Kyoto to Singapore (440, 170) -->
+                                    <path d="M510 110 Q475 160 440 170" stroke="url(#line-gradient)" stroke-dasharray="6 4" opacity="0.6">
+                                         <animate attributeName="stroke-dashoffset" from="100" to="0" dur="4.5s" repeatCount="indefinite" />
+                                    </path>
+                                </g>
+
+                                <!-- Nodes -->
+                                <!-- Kyoto (Hub) -->
+                                <g>
+                                    <circle cx="510" cy="110" r="4" fill="#2563eb" stroke="white" stroke-width="2" class="shadow-lg">
+                                        <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite" />
+                                        <animate attributeName="stroke-width" values="2;4;2" dur="2s" repeatCount="indefinite" />
+                                    </circle>
+                                    <circle cx="510" cy="110" r="12" stroke="#3b82f6" stroke-width="1" fill="none" opacity="0.5">
+                                        <animate attributeName="r" values="12;20;12" dur="2s" repeatCount="indefinite" />
+                                        <animate attributeName="opacity" values="0.5;0;0.5" dur="2s" repeatCount="indefinite" />
+                                    </circle>
+                                    <text x="510" y="90" text-anchor="middle" font-size="10" font-weight="bold" fill="#0f172a" font-family="sans-serif" style="text-shadow: 0 1px 2px white;">KYOTO</text>
+                                </g>
+
+                                <!-- Other Cities -->
+                                <g>
+                                    <circle cx="145" cy="105" r="3" fill="white" stroke="#64748b" stroke-width="1.5" />
+                                    <text x="145" y="95" text-anchor="middle" font-size="9" fill="#475569" font-family="sans-serif" font-weight="500">NEW YORK</text>
+                                </g>
+                                <g>
+                                    <circle cx="460" cy="135" r="3" fill="white" stroke="#64748b" stroke-width="1.5" />
+                                    <text x="440" y="138" text-anchor="end" font-size="9" fill="#475569" font-family="sans-serif" font-weight="500">HONG KONG</text>
+                                </g>
+                                <g>
+                                    <circle cx="440" cy="170" r="3" fill="white" stroke="#64748b" stroke-width="1.5" />
+                                    <text x="420" y="173" text-anchor="end" font-size="9" fill="#475569" font-family="sans-serif" font-weight="500">SINGAPORE</text>
+                                </g>
+                            </svg>

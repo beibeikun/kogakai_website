@@ -1,0 +1,68 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <rect width="100%" height="100%" fill="#f8fafc"/>
+    
+    <!-- Orbital Rings Background -->
+    <g transform="translate(400, 300)" opacity="0.3">
+        <circle cx="0" cy="0" r="150" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4" />
+        <circle cx="0" cy="0" r="250" stroke="#cbd5e1" stroke-width="1" />
+    </g>
+
+    <!-- Central Core (AI/Platform) -->
+    <g transform="translate(400, 300)">
+        <circle cx="0" cy="0" r="60" fill="#eff6ff" stroke="#3b82f6" stroke-width="2">
+             <animate attributeName="r" values="60;65;60" dur="3s" repeatCount="indefinite" />
+             <animate attributeName="opacity" values="1;0.8;1" dur="3s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="0" cy="0" r="20" fill="#3b82f6" />
+        <!-- Chip lines -->
+        <path d="M-10 -10 H10 M-10 0 H10 M-10 10 H10" stroke="#93c5fd" stroke-width="2" />
+    </g>
+
+    <!-- Satellites -->
+    <!-- Top: Database -->
+    <g transform="translate(400, 100)">
+        <rect x="-40" y="-30" width="80" height="60" rx="8" fill="white" stroke="#94a3b8" stroke-width="2" />
+        <path d="M-40 -10 H40 M-40 10 H40" stroke="#e2e8f0" stroke-width="2" />
+        <!-- Connection Line -->
+        <line x1="0" y1="30" x2="0" y2="140" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 4" />
+        <circle cx="0" cy="30" r="4" fill="#3b82f6">
+             <animate attributeName="cy" values="30;140" dur="2s" repeatCount="indefinite" />
+        </circle>
+    </g>
+
+    <!-- Bottom Right: User/Institution -->
+    <g transform="translate(616, 425)"> <!-- approx 30 deg -->
+        <circle cx="0" cy="0" r="40" fill="white" stroke="#94a3b8" stroke-width="2" />
+        <path d="M-15 10 Q0 25 15 10" stroke="#cbd5e1" stroke-width="2" fill="none" />
+        <circle cx="-10" cy="-10" r="3" fill="#cbd5e1" />
+        <circle cx="10" cy="-10" r="3" fill="#cbd5e1" />
+        <!-- Connection Line -->
+        <line x1="-35" y1="-20" x2="-160" y2="-90" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 4" />
+        <circle cx="-35" cy="-20" r="4" fill="#3b82f6">
+             <animate attributeName="cx" values="-35;-160" dur="2.5s" repeatCount="indefinite" />
+             <animate attributeName="cy" values="-20;-90" dur="2.5s" repeatCount="indefinite" />
+        </circle>
+    </g>
+
+    <!-- Bottom Left: Asset -->
+    <g transform="translate(184, 425)"> <!-- approx 150 deg -->
+        <path d="M0 -30 L30 20 H-30 Z" fill="white" stroke="#94a3b8" stroke-width="2" />
+        <!-- Connection Line -->
+        <line x1="30" y1="-20" x2="160" y2="-90" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 4" />
+        <circle cx="30" cy="-20" r="4" fill="#3b82f6">
+             <animate attributeName="cx" values="30;160" dur="2.2s" repeatCount="indefinite" />
+             <animate attributeName="cy" values="-20;-90" dur="2.2s" repeatCount="indefinite" />
+        </circle>
+    </g>
+
+    <!-- Floating Data Points -->
+    <g fill="#93c5fd">
+        <circle cx="500" cy="200" r="3" opacity="0.6">
+            <animate attributeName="cy" values="200;190;200" dur="4s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="300" cy="250" r="2" opacity="0.6">
+            <animate attributeName="cy" values="250;260;250" dur="3s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="450" cy="450" r="3" opacity="0.6" />
+    </g>
+</svg>

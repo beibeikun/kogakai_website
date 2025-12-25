@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html lang="ja" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お問い合わせ | 古河會</title>
+    <title>Contact | 古河會</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo_icononly.png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Tailwind CSS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: { sans: ['"Inter"', '"Noto Sans JP"', 'sans-serif'] },
-                    colors: {
-                        slate: { 50: '#f8fafc', 100: '#f1f5f9', 200: '#e2e8f0', 300: '#cbd5e1', 400: '#94a3b8', 500: '#64748b', 600: '#475569', 700: '#334155', 800: '#1e293b', 900: '#0f172a' },
-                        blue: { 50: '#eff6ff', 100: '#dbeafe', 600: '#2563eb', 700: '#1d4ed8' }
-                    },
-                    backgroundImage: { 'grid-pattern': "linear-gradient(to right, #f1f5f9 1px, transparent 1px), linear-gradient(to bottom, #f1f5f9 1px, transparent 1px)" },
-                    backgroundSize: { 'grid-pattern': '40px 40px' }
-                }
-            }
+
+    <!-- Tailwind Config -->
+    <script src="./assets/js/tailwind.js"></script>
+    <style>
+        /* Custom Grid Background Class */
+        .bg-grid {
+            background-image: linear-gradient(to right, #00000030 1px, transparent 1px), linear-gradient(to bottom, #00000030 1px, transparent 1px);
+            background-size: 50px 50px;
         }
-    </script>
-    <style> .bg-grid { background-image: linear-gradient(to right, #f1f5f9 1px, transparent 1px), linear-gradient(to bottom, #f1f5f9 1px, transparent 1px); background-size: 40px 40px; } </style>
+    </style>
 </head>
+
 <body class="bg-white text-slate-600 font-sans antialiased selection:bg-slate-200 selection:text-slate-900">
 
-    <!-- Navbar -->
-    <nav class="fixed w-full z-50 top-0 bg-white/80 backdrop-blur-md border-b border-slate-200">
-        <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html" class="flex items-center">
-                        <img src="assets/images/logo.svg" alt="古河會 | KOGAKAI" class="h-8 w-auto">
-                    </a>
-                </div>
-                <div class="hidden md:flex md:h-16 md:items-center ml-auto space-x-8">
-                    <a href="mission.html" class="inline-flex items-center px-1 h-full border-b-2 border-transparent text-sm font-medium text-slate-600 hover:text-slate-900 hover:border-blue-600 transition-all duration-200">ミッション</a>
-                    <a href="vision.html" class="inline-flex items-center px-1 h-full border-b-2 border-transparent text-sm font-medium text-slate-600 hover:text-slate-900 hover:border-blue-600 transition-all duration-200">ビジョン</a>
-                    <a href="value.html" class="inline-flex items-center px-1 h-full border-b-2 border-transparent text-sm font-medium text-slate-600 hover:text-slate-900 hover:border-blue-600 transition-all duration-200">バリュー</a>
-                    <a href="company.html" class="inline-flex items-center px-1 h-full border-b-2 border-transparent text-sm font-medium text-slate-600 hover:text-slate-900 hover:border-blue-600 transition-all duration-200">会社概要</a>
-                    <a href="contact.html" class="inline-flex items-center px-1 h-full border-b-2 border-blue-600 text-sm font-medium text-slate-900 transition-all duration-200">お問い合わせ</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <!-- Navbar (Linear Style) -->
+    <div id="navbar-placeholder"></div>
 
     <!-- Header Section -->
     <section class="relative pt-32 pb-20 border-b border-slate-200 bg-white">
+        <div class="absolute top-0 right-0 bottom-0 w-3/4 overflow-hidden z-0 pointer-events-none" aria-hidden="true">
+            <svg class="absolute top-0 right-0 h-full w-full opacity-30" viewBox="0 0 1000 1200" fill="none"
+                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <!-- Line 1: Lightest Blue, Leftmost -->
+                <path d="M600 0 L450 600 L600 1200" stroke="#93c5fd" stroke-width="1.5"
+                    vector-effect="non-scaling-stroke" />
+
+                <!-- Line 2: Medium Blue, Middle -->
+                <path d="M750 0 L600 600 L750 1200" stroke="#60a5fa" stroke-width="1.5"
+                    vector-effect="non-scaling-stroke" />
+
+                <!-- Line 3: Deep Blue, Rightmost -->
+                <path d="M900 0 L750 600 L900 1200" stroke="#2563eb" stroke-width="2"
+                    vector-effect="non-scaling-stroke" />
+            </svg>
+        </div>
         <div class="max-w-[1440px] mx-auto px-6 lg:px-12 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-6">Contact</h1>
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-6">
+                <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
+                    Contact
+                </span>
+            </h1>
             <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
                 サービスに関するご質問やご相談は、<br>
                 下記フォームよりお気軽にお問い合わせください。
@@ -63,59 +67,185 @@
         </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="py-24 bg-white">
-        <div class="max-w-2xl mx-auto px-6 lg:px-12">
-            <form class="space-y-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Contact Content & Map -->
+    <section class="bg-white">
+        <!-- Main Content Grid -->
+        <div class="max-w-6xl mx-auto py-24 px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+
+                <!-- Left Column: Partnership Inquiries -->
+                <div class="space-y-8">
                     <div>
-                        <label for="last-name" class="block text-sm font-medium text-slate-700 mb-2">姓</label>
-                        <input type="text" id="last-name" class="block w-full rounded-sm border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm px-4 py-3 bg-slate-50 border" placeholder="古河">
+                        <h3 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">お問い合わせ</h3>
+                        <h2 class="text-2xl font-bold text-slate-900">パートナーシップに関するお問い合わせ</h2>
                     </div>
+                    <p class="text-slate-600 leading-relaxed">
+                        古河會との業務提携や協業に関するご相談は、以下の窓口より承っております。<br>
+                        新たな価値創造に向けたパートナーシップをお待ちしております。
+                    </p>
+                    <div class="space-y-6">
+                        <!-- Item 1: Phone -->
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-blue-900 flex items-center justify-center text-white shadow-sm">
+                                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-sm font-bold text-slate-900">電話 (Phone)</h4>
+                                <p class="text-slate-600 mt-1 font-mono">+(81) 075-468-1620</p>
+                            </div>
+                        </div>
+                        <!-- Item 2: FAX -->
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-blue-900 flex items-center justify-center text-white shadow-sm">
+                                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-sm font-bold text-slate-900">FAX</h4>
+                                <p class="text-slate-600 mt-1 font-mono">+(81) 075-468-1630</p>
+                            </div>
+                        </div>
+                        <!-- Item 3: Email -->
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-blue-900 flex items-center justify-center text-white shadow-sm">
+                                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-sm font-bold text-slate-900">Email</h4>
+                                <p class="text-slate-600 mt-1">yoshinaga.nao1982@gmail.com</p>
+                            </div>
+                        </div>
+                        <!-- Item 4: Address -->
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-blue-900 flex items-center justify-center text-white shadow-sm">
+                                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-sm font-bold text-slate-900">住所 (Address)</h4>
+                                <p class="text-slate-600 mt-1">
+                                    〒603-8835<br>
+                                    京都府京都市北区大宮西総門口町 42-1 古河ビル
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Customer Support -->
+                <div class="space-y-8">
                     <div>
-                        <label for="first-name" class="block text-sm font-medium text-slate-700 mb-2">名</label>
-                        <input type="text" id="first-name" class="block w-full rounded-sm border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm px-4 py-3 bg-slate-50 border" placeholder="太郎">
+                        <h3 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">お問い合わせ</h3>
+                        <h2 class="text-2xl font-bold text-slate-900">カスタマーサポートのご案内</h2>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed">
+                        お客様からのお問い合わせは、LINEおよびWeChatにて迅速に対応させていただいております。<br>
+                        お使いのアプリからQRコードをスキャンしてご連絡ください。
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <!-- QR 1: LINE -->
+                        <div
+                            class="bg-white p-4 rounded-sm border border-slate-200 text-center hover:border-slate-300 transition-colors">
+                            <img src="./assets/images/line.png" alt="LINE QR Code"
+                                class="w-full h-auto mb-3 rounded-sm border border-slate-100">
+                            <span class="block text-sm font-bold text-slate-700">LINE</span>
+                        </div>
+                        <!-- QR 2: WeChat1 -->
+                        <div
+                            class="bg-white p-4 rounded-sm border border-slate-200 text-center hover:border-slate-300 transition-colors">
+                            <img src="https://placehold.co/150x150?text=WeChat1" alt="WeChat QR Code 1"
+                                class="w-full h-auto mb-3 rounded-sm border border-slate-100">
+                            <span class="block text-sm font-bold text-slate-700">WeChat1</span>
+                        </div>
+                        <!-- QR 3: WeChat2 -->
+                        <div
+                            class="bg-white p-4 rounded-sm border border-slate-200 text-center hover:border-slate-300 transition-colors">
+                            <img src="https://placehold.co/150x150?text=WeChat2" alt="WeChat QR Code 2"
+                                class="w-full h-auto mb-3 rounded-sm border border-slate-100">
+                            <span class="block text-sm font-bold text-slate-700">WeChat2</span>
+                        </div>
                     </div>
                 </div>
-
-                <div>
-                    <label for="email" class="block text-sm font-medium text-slate-700 mb-2">メールアドレス</label>
-                    <input type="email" id="email" class="block w-full rounded-sm border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm px-4 py-3 bg-slate-50 border" placeholder="taro.kogawa@example.com">
-                </div>
-
-                <div>
-                    <label for="company" class="block text-sm font-medium text-slate-700 mb-2">会社名</label>
-                    <input type="text" id="company" class="block w-full rounded-sm border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm px-4 py-3 bg-slate-50 border" placeholder="株式会社古河會">
-                </div>
-
-                <div>
-                    <label for="message" class="block text-sm font-medium text-slate-700 mb-2">お問い合わせ内容</label>
-                    <textarea id="message" rows="6" class="block w-full rounded-sm border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm px-4 py-3 bg-slate-50 border"></textarea>
-                </div>
-
-                <div>
-                    <button type="submit" class="w-full flex justify-center py-4 px-8 border border-transparent rounded-sm shadow-sm text-sm font-bold text-white bg-slate-900 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900 transition-colors">
-                        送信する
-                    </button>
-                </div>
-            </form>
-
-            <div class="mt-16 border-t border-slate-200 pt-8 text-center">
-                <p class="text-sm text-slate-500">
-                    お電話でのお問い合わせ<br>
-                    <span class="text-lg font-bold text-slate-900 mt-2 block">+(81) 075-468-1620</span>
-                    <span class="text-xs text-slate-400 mt-1 block">平日 10:00 - 18:00</span>
-                </p>
             </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-white border-t border-slate-200 pt-16 pb-12">
-        <div class="max-w-[1440px] mx-auto px-6 lg:px-12 text-center text-slate-400 text-sm">
-            <p>&copy; 2024 KOGAKAI Inc. All rights reserved.</p>
+        <!-- Full Width Map -->
+        <div class="w-full h-[450px] bg-slate-100 border-t border-slate-200">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13063.843542957347!2d135.743026!3d35.057717!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a951ad1e633d%3A0xa034a30377c6453c!2z5Y-k5rKz5pyD44Kq44O844Kv44K344On44Oz!5e0!3m2!1sja!2sjp!4v1766624885974!5m2!1sja!2sjp"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
-    </footer>
+    </section>
+    <div id="footer-placeholder"></div>
+    <div class="max-w-[1440px] mx-auto">
+        <div
+            class="border-t border-slate-100 p-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400">
+            <p>Copyright &copy; 2017-2026 KOGAKAI Co., Ltd. All rights reserved.</p>
+            <div class="mt-4 md:mt-0 font-mono">
+                DESIGN_SYSTEM: LINEAR_V1
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+    <script>
+        // 封装加载函数
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                });
+        }
+
+        // 执行加载
+        loadComponent('navbar-placeholder', 'navbar.html');
+        loadComponent('footer-placeholder', 'footer.html');
+    </script>
 
 </body>
+
 </html>

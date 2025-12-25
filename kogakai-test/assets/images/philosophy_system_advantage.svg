@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="w-full h-full" viewBox="0 0 400 533" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="0.5" />
+                                    </pattern>
+                                    <linearGradient id="blue-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.4" />
+                                        <stop offset="50%" stop-color="#2563eb" stop-opacity="1" />
+                                        <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.4" />
+                                    </linearGradient>
+                                </defs>
+
+                                <!-- Background Grid -->
+                                <rect width="100%" height="100%" fill="url(#grid-pattern)" opacity="0.5" />
+
+                                <!-- Central Composition -->
+                                <g transform="translate(200, 266)">
+                                    <!-- Rotating Outer Ring -->
+                                    <circle r="140" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="4 4"
+                                        opacity="0.6">
+                                        <animateTransform attributeName="transform" type="rotate" from="0" to="360"
+                                            dur="120s" repeatCount="indefinite" />
+                                    </circle>
+
+                                    <!-- Middle Ring -->
+                                    <circle r="100" stroke="#94a3b8" stroke-width="0.5" opacity="0.4" />
+
+                                    <!-- 8-Point Connection Network -->
+                                    <g stroke="#60a5fa" stroke-width="1" opacity="0.3">
+                                        <!-- Axis Lines -->
+                                        <line x1="0" y1="-130" x2="0" y2="130" />
+                                        <line x1="-130" y1="0" x2="130" y2="0" />
+                                        <!-- Diagonal Lines -->
+                                        <line x1="-92" y1="-92" x2="92" y2="92" />
+                                        <line x1="-92" y1="92" x2="92" y2="-92" />
+                                    </g>
+
+                                    <!-- Dynamic Octagon Path -->
+                                    <path
+                                        d="M0 -100 L70.7 -70.7 L100 0 L70.7 70.7 L0 100 L-70.7 70.7 L-100 0 L-70.7 -70.7 Z"
+                                        stroke="url(#blue-gradient)" stroke-width="1.5" fill="none"
+                                        vector-effect="non-scaling-stroke">
+                                        <animate attributeName="stroke-dasharray" values="0,600;600,0" dur="8s"
+                                            repeatCount="indefinite" />
+                                    </path>
+
+                                    <!-- Core Nodes (Representing 8 elements) -->
+                                    <g fill="#bg-white" stroke="#2563eb" stroke-width="1.5">
+                                        <circle cx="0" cy="-100" r="3" class="fill-white" />
+                                        <circle cx="70.7" cy="-70.7" r="3" class="fill-white" />
+                                        <circle cx="100" cy="0" r="3" class="fill-white" />
+                                        <circle cx="70.7" cy="70.7" r="3" class="fill-white" />
+                                        <circle cx="0" cy="100" r="3" class="fill-white" />
+                                        <circle cx="-70.7" cy="70.7" r="3" class="fill-white" />
+                                        <circle cx="-100" cy="0" r="3" class="fill-white" />
+                                        <circle cx="-70.7" cy="-70.7" r="3" class="fill-white" />
+                                    </g>
+
+                                    <!-- Central Core Pulse -->
+                                    <circle r="15" fill="#eff6ff" stroke="#3b82f6" stroke-width="1">
+                                        <animate attributeName="r" values="15;18;15" dur="3s"
+                                            repeatCount="indefinite" />
+                                        <animate attributeName="opacity" values="0.8;1;0.8" dur="3s"
+                                            repeatCount="indefinite" />
+                                    </circle>
+                                    <circle r="4" fill="#1d4ed8" />
+                                </g>
+
+                                <!-- Decorative Tech Marks -->
+                                <path d="M20 20 L40 20 M20 20 L20 40" stroke="#94a3b8" stroke-width="1.5" />
+                                <path d="M380 20 L360 20 M380 20 L380 40" stroke="#94a3b8" stroke-width="1.5" />
+                                <path d="M20 513 L40 513 M20 513 L20 493" stroke="#94a3b8" stroke-width="1.5" />
+                                <path d="M380 513 L360 513 M380 513 L380 493" stroke="#94a3b8" stroke-width="1.5" />
+                            </svg>

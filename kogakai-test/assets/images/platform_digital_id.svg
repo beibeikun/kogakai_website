@@ -1,0 +1,22 @@
+<svg viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <rect width="100%" height="100%" fill="#f8fafc"/>
+    <!-- Card -->
+    <g transform="scale(1.3) translate(-90 -70)">
+    <rect x="200" y="150" width="400" height="300" rx="20" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" />
+    
+    <!-- Header Strip -->
+    <path d="M200 170 C200 158.954 208.954 150 220 150 H580 C591.046 150 600 158.954 600 170 V 220 H 200 V 170 Z" fill="#f1f5f9" />
+    
+    <!-- Chip -->
+    <rect x="240" y="250" width="80" height="60" rx="5" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2" />
+    <path d="M260 250 V240 M280 250 V240 M300 250 V240 M240 270 H230 M240 290 H230 M320 270 H330 M320 290 H330" stroke="#cbd5e1" stroke-width="2" />
+    
+    <!-- Text Lines -->
+    <rect x="360" y="260" width="180" height="10" rx="5" fill="#f1f5f9" />
+    <rect x="360" y="290" width="120" height="10" rx="5" fill="#f1f5f9" />
+    
+    <!-- Fingerprint/Verify Icon -->
+    <circle cx="500" cy="380" r="40" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" />
+    <path d="M485 380 L495 390 L515 370" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+</svg>
