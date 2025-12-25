@@ -11,12 +11,6 @@
 
             <!-- Desktop Menu (Right Aligned) -->
             <div class="hidden md:flex md:h-16 md:items-center ml-auto space-x-8">
-                <div class="relative group h-full flex items-center">
-                    <a href="./template.html"
-                        class="inline-flex items-center px-1 h-full border-b-2 border-transparent text-sm font-medium text-slate-600 hover:text-slate-900 hover:border-blue-600 transition-all duration-200 focus:outline-none w-full">
-                        template
-                    </a>
-                </div>
                 <!-- Company Dropdown -->
                 <div class="relative group h-full flex items-center">
                     <a href="./about.html"
@@ -154,12 +148,71 @@
     <!-- Mobile Menu -->
     <div class="hidden md:hidden bg-white border-b border-slate-200" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#company"
-                class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm">企業情報</a>
-            <a href="#platform"
-                class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm">プラットフォーム</a>
+            <details class="group">
+                <summary
+                    class="cursor-pointer block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm flex items-center justify-between">
+                    <span>私たちについて</span>
+                    <svg class="ml-2 w-4 h-4 text-slate-400 group-hover:text-slate-600" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </summary>
+                <div class="mt-1 pl-3 space-y-1">
+                    <a href="./about.html#mission"
+                        class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">ミッション</a>
+                    <a href="./about.html#vision"
+                        class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">ビジョン</a>
+                    <a href="./about.html#value"
+                        class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">バリュー</a>
+                    <a href="./philosophy.html"
+                        class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">フィロソフィー</a>
+
+                </div>
+            </details>
+            <details class="group">
+                <summary
+                    class="cursor-pointer block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm flex items-center justify-between">
+                    <span>プラットフォーム</span>
+                    <svg class="ml-2 w-4 h-4 text-slate-400 group-hover:text-slate-600" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </summary>
+                <div class="mt-1 pl-3 space-y-1">
+                    <a href="./platform.html#s1"
+                        class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">バリュー・ネクサス</a>
+                    <a href="./platform.html#s2"
+                        class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">テクノロジー</a>
+                    <a href="./platform.html#s3"
+                        class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">デジタルID</a>
+                    <a href="./platform.html#s4"
+                        class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">アセット・データベース</a>
+                    <a href="./platform.html#s5"
+                        class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">ビジネス・ソリューション</a>
+                    <a href="./platform.html#s6"
+                        class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">アセットファイナンス</a>
+                    <a href="./platform.html#s7"
+                        class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">ソリューション</a>
+                </div>
+            </details>
+
+            <a href="./company.html"
+                class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm">
+                会社概要
+            </a>
+
+            <a href="./contact.html"
+                class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm">
+                お問い合わせ
+            </a>
+
             <a href="#contact"
-                class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm">お問い合わせ</a>
+                class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm">
+                <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
+                    オークション事業
+                </span>
+            </a>
+
             <div class="border-t border-slate-100 my-2"></div>
             <button
                 class="w-full text-left px-3 py-2 text-base font-medium text-slate-500 hover:text-slate-900 hover:bg-slate-50 rounded-sm">
