@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="ja" class="scroll-smooth">
+<html lang="zh-CN" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | 古河會</title>
+    <title>公司简介 | 古河会株式会社</title>
     <link rel="icon" type="image/png" href="./assets/images/logo_icononly.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
         rel="stylesheet">
 
     <!-- Tailwind CSS (CDN) -->
@@ -25,6 +25,10 @@
             background-image: linear-gradient(to right, #00000030 1px, transparent 1px), linear-gradient(to bottom, #00000030 1px, transparent 1px);
             background-size: 50px 50px;
         }
+        
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+        }
     </style>
 </head>
 
@@ -36,8 +40,8 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html" class="flex items-center">
-                        <img src="assets/images/logo.svg" alt="古河會 | KOGAKAI" class="h-8 w-auto">
+                    <a href="index_cn.html" class="flex items-center">
+                        <img src="assets/images/logo.svg" alt="古河会 | KOGAKAI" class="h-8 w-auto">
                     </a>
                 </div>
 
@@ -45,9 +49,9 @@
                 <div class="hidden md:flex md:h-16 md:items-center ml-auto space-x-8">
                     <!-- Company Dropdown -->
                     <div class="relative group h-full flex items-center">
-                        <a href="./about.html"
+                        <a href="./about_cn.html"
                             class="inline-flex items-center px-1 h-full border-b-2 border-transparent text-sm font-medium text-slate-600 hover:text-slate-900 hover:border-blue-600 transition-all duration-200 focus:outline-none w-full">
-                            私たちについて
+                            关于我们
                             <svg class="ml-1 w-4 h-4 text-slate-400 group-hover:text-slate-600" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -59,21 +63,21 @@
                         <div
                             class="absolute top-full right-0 w-56 bg-white border border-slate-200 shadow-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right">
                             <div class="py-1">
-                                <a href="./about.html#mission"
+                                <a href="./about_cn.html#mission"
                                     class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
-                                    ミッション
+                                    使命
                                 </a>
-                                <a href="./about.html#vision"
+                                <a href="./about_cn.html#vision"
                                     class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
-                                    ビジョン
+                                    愿景
                                 </a>
-                                <a href="./about.html#value"
+                                <a href="./about_cn.html#value"
                                     class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
-                                    バリュー
+                                    价值观
                                 </a>
-                                <a href="./philosophy.html"
+                                <a href="./philosophy_cn.html"
                                     class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
-                                    フィロソフィー
+                                    经营理念
                                 </a>
 
                             </div>
@@ -82,9 +86,9 @@
 
                     <!-- Platform Dropdown -->
                     <div class="relative group h-full flex items-center">
-                        <a href="./platform.html"
+                        <a href="./platform_cn.html"
                             class="inline-flex items-center px-1 h-full border-b-2 border-transparent text-sm font-medium text-slate-600 hover:text-slate-900 hover:border-blue-600 transition-all duration-200 focus:outline-none w-full">
-                            プラットフォーム概要
+                            平台概要
                             <svg class="ml-1 w-4 h-4 text-slate-400 group-hover:text-slate-600" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -96,52 +100,49 @@
                         <div
                             class="absolute top-full right-0 w-64 bg-white border border-slate-200 shadow-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right">
                             <div class="py-1">
-                                <a href="./platform.html#s1"
+                                <a href="./platform_cn.html#s1"
                                     class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
-                                    <span class="block font-medium">バリュー・ネクサス</span>
-                                    <!--
-                                <span class="block text-xs text-slate-400 mt-0.5">技術基盤</span>
-                                -->
+                                    <span class="block font-medium">价值枢纽</span>
                                 </a>
-                                <a href="./platform.html#s2"
+                                <a href="./platform_cn.html#s2"
                                     class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
-                                    <span class="block font-medium">テクノロジー</span>
+                                    <span class="block font-medium">核心技术</span>
                                 </a>
-                                <a href="./platform.html#s3"
+                                <a href="./platform_cn.html#s3"
                                     class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
-                                    <span class="block font-medium">デジタルID</span>
+                                    <span class="block font-medium">数字身份 (Digital ID)</span>
                                 </a>
-                                <a href="./platform.html#s4"
+                                <a href="./platform_cn.html#s4"
                                     class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
-                                    <span class="block font-medium">アセット・データベース</span>
+                                    <span class="block font-medium">资产数据库</span>
                                 </a>
-                                <a href="./platform.html#s5"
+                                <a href="./platform_cn.html#s5"
                                     class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
-                                    <span class="block font-medium">ビジネス・ソリューション</span>
+                                    <span class="block font-medium">商业解决方案</span>
                                 </a>
-                                <a href="./platform.html#s6"
+                                <a href="./platform_cn.html#s6"
                                     class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
-                                    <span class="block font-medium">アセットファイナンス</span>
+                                    <span class="block font-medium">资产金融</span>
                                 </a>
-                                <a href="./platform.html#s7"
+                                <a href="./platform_cn.html#s7"
                                     class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
-                                    <span class="block font-medium">ソリューション</span>
+                                    <span class="block font-medium">解决方案</span>
                                 </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="relative group h-full flex items-center">
-                        <a href="./company.html"
+                        <a href="./company_cn.html"
                             class="inline-flex items-center px-1 h-full border-b-2 border-transparent text-sm font-medium text-slate-600 hover:text-slate-900 hover:border-blue-600 transition-all duration-200 focus:outline-none w-full">
-                            会社概要
+                            公司简介
                         </a>
                     </div>
 
                     <div class="relative group h-full flex items-center">
-                        <a href="./contact.html"
+                        <a href="./contact_cn.html"
                             class="inline-flex items-center px-1 h-full border-b-2 border-transparent text-sm font-medium text-slate-600 hover:text-slate-900 hover:border-blue-600 transition-all duration-200 focus:outline-none w-full">
-                            お問い合わせ
+                            联系我们
                         </a>
                     </div>
 
@@ -149,7 +150,7 @@
                         <a href="https://www.kogakai.jp"
                             class="inline-flex items-center px-1 h-full border-b-2 border-transparent text-sm font-medium text-slate-600 hover:text-slate-900 hover:border-blue-600 transition-all duration-200 focus:outline-none w-full">
                             <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
-                                オークション事業
+                                拍卖业务
                             </span>
                         </a>
                     </div>
@@ -158,9 +159,9 @@
 
                 <!-- Right Actions -->
                 <div class="hidden md:flex items-center ml-8">
-                    <a href="about_cn.html"
+                    <a href="company.html"
                         class="px-3 py-1 text-xs font-medium text-slate-600 bg-white border border-slate-300 rounded hover:border-slate-400 hover:text-slate-900 transition-all">
-                        Chinese
+                        日本語
                     </a>
                 </div>
 
@@ -185,72 +186,72 @@
                 <details class="group">
                     <summary
                         class="cursor-pointer block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm flex items-center justify-between">
-                        <span>私たちについて</span>
+                        <span>关于我们</span>
                         <svg class="ml-2 w-4 h-4 text-slate-400 group-hover:text-slate-600" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </summary>
                     <div class="mt-1 pl-3 space-y-1">
-                        <a href="./about.html#mission"
-                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">ミッション</a>
-                        <a href="./about.html#vision"
-                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">ビジョン</a>
-                        <a href="./about.html#value"
-                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">バリュー</a>
-                        <a href="./philosophy.html"
-                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">フィロソフィー</a>
-                        
+                        <a href="./about_cn.html#mission"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">使命</a>
+                        <a href="./about_cn.html#vision"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">愿景</a>
+                        <a href="./about_cn.html#value"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">价值观</a>
+                        <a href="./philosophy_cn.html"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">经营理念</a>
+
                     </div>
                 </details>
                 <details class="group">
                     <summary
                         class="cursor-pointer block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm flex items-center justify-between">
-                        <span>プラットフォーム</span>
+                        <span>平台概要</span>
                         <svg class="ml-2 w-4 h-4 text-slate-400 group-hover:text-slate-600" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </summary>
                     <div class="mt-1 pl-3 space-y-1">
-                        <a href="./platform.html#s1"
-                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">バリュー・ネクサス</a>
-                        <a href="./platform.html#s2"
-                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">テクノロジー</a>
-                        <a href="./platform.html#s3"
-                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">デジタルID</a>
-                        <a href="./platform.html#s4"
-                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">アセット・データベース</a>
-                        <a href="./platform.html#s5"
-                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">ビジネス・ソリューション</a>
-                        <a href="./platform.html#s6"
-                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">アセットファイナンス</a>
-                        <a href="./platform.html#s7"
-                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">ソリューション</a>
+                        <a href="./platform_cn.html#s1"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">价值枢纽</a>
+                        <a href="./platform_cn.html#s2"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">核心技术</a>
+                        <a href="./platform_cn.html#s3"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">数字身份</a>
+                        <a href="./platform_cn.html#s4"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">资产数据库</a>
+                        <a href="./platform_cn.html#s5"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">商业解决方案</a>
+                        <a href="./platform_cn.html#s6"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">资产金融</a>
+                        <a href="./platform_cn.html#s7"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">解决方案</a>
                     </div>
                 </details>
 
-                <a href="./company.html"
+                <a href="./company_cn.html"
                     class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm">
-                    会社概要
+                    公司简介
                 </a>
 
-                <a href="./contact.html"
+                <a href="./contact_cn.html"
                     class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm">
-                    お問い合わせ
+                    联系我们
                 </a>
 
                 <a href="https://www.kogakai.jp"
                     class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm">
                     <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
-                        オークション事業
+                        拍卖业务
                     </span>
                 </a>
 
                 <div class="border-t border-slate-100 my-2"></div>
-                <a href="about_cn.html"
+                <a href="company.html"
                     class="block w-full text-left px-3 py-2 text-base font-medium text-slate-500 hover:text-slate-900 hover:bg-slate-50 rounded-sm">
-                    Chinese
+                    日本語
                 </a>
             </div>
         </div>
@@ -277,11 +278,11 @@
         <div class="max-w-[1440px] mx-auto px-6 lg:px-12 text-center">
             <h1 class="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-6">
                 <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
-                    About Us
+                    Company
                 </span>
             </h1>
             <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                高価値資産の科学的鑑定とデータ基盤により、<br>デジタルID認証と透明な流通を実現するプラットフォーム。
+                以技术支撑美术品信誉与流通，古河会企业信息。
             </p>
         </div>
         <div class="absolute top-0 right-0 bottom-0 w-full overflow-hidden z-0 pointer-events-none opacity-30">
@@ -289,140 +290,65 @@
         </div>
     </section>
 
-
-    <!-- Section 1 -->
-    <section class="py-24 bg-white border-b border-slate-200" id="mission">
-        <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
-            <!-- Header -->
-            <div class="text-center mb-16">
-                <h3 class="text-lg font-medium text-slate-800 mb-2">
-                    <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
-                        Mission
-                    </span>
-                </h3>
-                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">
-                    ミッション
-                </h2>
-                <div class="w-16 h-1 bg-blue-600 mx-auto mt-6 rounded-full"></div>
-
-                <p class="mt-8 text-lg text-slate-600 max-w-5xl mx-auto leading-relaxed">
-                    古河會は、科学的検証とデータ解析を融合させ、美術品の年代推定および来歴管理の新たな国際標準を確立します。
-                    XRF分析、AI、ブロックチェーン等の先端技術を駆使した鑑定・認証サービスにより、オークションから博物館、コレクターまで、美術品ライフサイクル全体に高い信頼性と透明性を提供。
-                    パートナーシップに基づき、グローバルな美術品市場の発展をリードします。
-                </p>
+    <!-- Main Content -->
+    <section class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6 lg:px-12">
+            <div class="border border-slate-200 rounded-sm overflow-hidden">
+                <table class="min-w-full divide-y divide-slate-200">
+                    <tbody class="divide-y divide-slate-200 bg-white">
+                        <tr class="flex flex-col md:table-row">
+                            <th class="px-6 py-4 text-left text-sm font-semibold text-slate-900 bg-slate-50 md:w-1/3">公司名称</th>
+                            <td class="px-6 py-4 text-sm text-slate-600 md:w-2/3">古河会株式会社 (英文名: KOGAKAI Co., Ltd.)</td>
+                        </tr>
+                        <tr class="flex flex-col md:table-row">
+                            <th class="px-6 py-4 text-left text-sm font-semibold text-slate-900 bg-slate-50">成立时间</th>
+                            <td class="px-6 py-4 text-sm text-slate-600">2013年7月10日</td>
+                        </tr>
+                        <tr class="flex flex-col md:table-row">
+                            <th class="px-6 py-4 text-left text-sm font-semibold text-slate-900 bg-slate-50">地址</th>
+                            <td class="px-6 py-4 text-sm text-slate-600">
+                                邮编 603-8835<br>
+                                京都府京都市北区大宫西总门口町42-1 古河大厦
+                            </td>
+                        </tr>
+                        <tr class="flex flex-col md:table-row">
+                            <th class="px-6 py-4 text-left text-sm font-semibold text-slate-900 bg-slate-50">代表人</th>
+                            <td class="px-6 py-4 text-sm text-slate-600">吉永 奈央</td>
+                        </tr>
+                        <tr class="flex flex-col md:table-row">
+                            <th class="px-6 py-4 text-left text-sm font-semibold text-slate-900 bg-slate-50">业务内容</th>
+                            <td class="px-6 py-4 text-sm text-slate-600">
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>数据平台的开发与运营</li>
+                                    <li>拍卖业务</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="flex flex-col md:table-row">
+                            <th class="px-6 py-4 text-left text-sm font-semibold text-slate-900 bg-slate-50">联系方式</th>
+                            <td class="px-6 py-4 text-sm text-slate-600">+(81) 075-468-1620</td>
+                        </tr>
+                        <tr class="flex flex-col md:table-row">
+                            <th class="px-6 py-4 text-left text-sm font-semibold text-slate-900 bg-slate-50">古物商许可证</th>
+                            <td class="px-6 py-4 text-sm text-slate-600">第 611211330023 号</td>
+                        </tr>
+                        <tr class="flex flex-col md:table-row">
+                            <th class="px-6 py-4 text-left text-sm font-semibold text-slate-900 bg-slate-50">古物市场主许可证</th>
+                            <td class="px-6 py-4 text-sm text-slate-600">第 62102R037503 号</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
-
-    <!-- Section 2 -->
-    <section class="py-24 bg-white border-b border-slate-200" id="vision">
-        <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
-            <!-- Header -->
-            <div class="text-center mb-16">
-                <h3 class="text-lg font-medium text-slate-800 mb-2">
-                    <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
-                        Vision
-                    </span>
-                </h3>
-                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">
-                    ビジョン
-                </h2>
-                <div class="w-16 h-1 bg-blue-600 mx-auto mt-6 rounded-full"></div>
-
-                <p class="mt-8 text-lg text-slate-600 max-w-5xl mx-auto leading-relaxed">
-                    流通するすべての美術品にデジタルIDを付与し、世界中で安心して収蔵・流通できる基盤を築く。テクノロジーで美術品の保護、流通、継承を支える。
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 3 -->
-    <section class="py-24 bg-white border-b border-slate-200" id="value">
-        <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
-            <!-- Header -->
-            <div class="text-center mb-16">
-                <h3 class="text-lg font-medium text-slate-800 mb-2">
-                    <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
-                        Values
-                    </span>
-                </h3>
-                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">
-                    バリュー
-                </h2>
-                <div class="w-16 h-1 bg-blue-600 mx-auto mt-6 rounded-full"></div>
-
-                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 text-left">
-                    <div class="group relative bg-slate-50 border border-slate-200 p-8 rounded-sm hover:border-blue-200 hover:shadow-lg transition-all duration-300">
-                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <svg class="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                            </svg>
-                        </div>
-                        <div class="mb-6">
-                            <span class="inline-flex items-center justify-center w-12 h-12 rounded bg-white text-blue-600 border border-slate-100 shadow-sm text-xl font-bold font-mono">01</span>
-                        </div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">共創</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">協働し、新しい価値を「共」に「創」る</p>
-                        <div class="h-1 w-12 bg-slate-200 mt-4 group-hover:bg-blue-600 transition-colors duration-300"></div>
-                    </div>
-
-                    <div class="group relative bg-slate-50 border border-slate-200 p-8 rounded-sm hover:border-blue-200 hover:shadow-lg transition-all duration-300">
-                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <svg class="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21C7.5 17.5 5 15 5 11a7 7 0 1114 0c0 4-2.5 6.5-7 10z" />
-                            </svg>
-                        </div>
-                        <div class="mb-6">
-                            <span class="inline-flex items-center justify-center w-12 h-12 rounded bg-white text-blue-600 border border-slate-100 shadow-sm text-xl font-bold font-mono">02</span>
-                        </div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">誠実</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">真心を持って相手のことを考え行動する</p>
-                        <div class="h-1 w-12 bg-slate-200 mt-4 group-hover:bg-blue-600 transition-colors duration-300"></div>
-                    </div>
-
-                    <div class="group relative bg-slate-50 border border-slate-200 p-8 rounded-sm hover:border-blue-200 hover:shadow-lg transition-all duration-300">
-                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <svg class="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8l-4 8h8l-4-8zm0-6v6m0 12v2" />
-                            </svg>
-                        </div>
-                        <div class="mb-6">
-                            <span class="inline-flex items-center justify-center w-12 h-12 rounded bg-white text-blue-600 border border-slate-100 shadow-sm text-xl font-bold font-mono">03</span>
-                        </div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">公正</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">法令や規範を遵守し平等で偏りがない</p>
-                        <div class="h-1 w-12 bg-slate-200 mt-4 group-hover:bg-blue-600 transition-colors duration-300"></div>
-                    </div>
-
-                    <div class="group relative bg-slate-50 border border-slate-200 p-8 rounded-sm hover:border-blue-200 hover:shadow-lg transition-all duration-300">
-                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <svg class="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h7v7H3V3zm0 11h7v7H3v-7zm11-11h7v7h-7V3zm0 11h7v7h-7v-7z" />
-                            </svg>
-                        </div>
-                        <div class="mb-6">
-                            <span class="inline-flex items-center justify-center w-12 h-12 rounded bg-white text-blue-600 border border-slate-100 shadow-sm text-xl font-bold font-mono">04</span>
-                        </div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">効率</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">無駄を減らして最大の成果を得る</p>
-                        <div class="h-1 w-12 bg-slate-200 mt-4 group-hover:bg-blue-600 transition-colors duration-300"></div>
-                    </div>
-
-                    <div class="group relative bg-slate-50 border border-slate-200 p-8 rounded-sm hover:border-blue-200 hover:shadow-lg transition-all duration-300">
-                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <svg class="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                            </svg>
-                        </div>
-                        <div class="mb-6">
-                            <span class="inline-flex items-center justify-center w-12 h-12 rounded bg-white text-blue-600 border border-slate-100 shadow-sm text-xl font-bold font-mono">05</span>
-                        </div>
-                        <h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">迅速</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">スピーディーな対応</p>
-                        <div class="h-1 w-12 bg-slate-200 mt-4 group-hover:bg-blue-600 transition-colors duration-300"></div>
-                    </div>
-                </div>
-            </div>
+    <section>
+        <!-- Full Width Map -->
+        <div class="w-full h-[450px] bg-slate-100 border-t border-slate-200">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13063.843542957347!2d135.743026!3d35.057717!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a951ad1e633d%3A0xa034a30377c6453c!2z5Y-k5rKz5pyD44Kq44O844Kv44K344On44Oz!5e0!3m2!1sja!2sjp!4v1766624885974!5m2!1sja!2sjp"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </section>
 
@@ -435,7 +361,7 @@
                 <!-- Brand -->
                 <div class="p-8 lg:p-10 space-y-4">
                     <!-- Logo -->
-                    <img src="assets/images/logo.svg" alt="古河會 | KOGAKAI" class="h-12 md:h-12 w-auto">
+                    <img src="assets/images/logo.svg" alt="古河会 | KOGAKAI" class="h-12 md:h-12 w-auto">
 
                     <p class="text-sm text-slate-500 leading-relaxed">
                         KOGAKAI Co., Ltd.<br>
@@ -455,7 +381,7 @@
                     <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Contact</h4>
                     <ul class="space-y-3 text-sm text-slate-600">
                         <li class="flex items-start">
-                            <span class="block">〒603-8835<br>京都府京都市北区大宮西総門口町42-1<br>古河ビル</span>
+                            <span class="block">〒603-8835<br>京都市北区大宫西总门口町42-1<br>古河大厦</span>
                         </li>
                         <li>+(81) 075-468-1620</li>
                         <li>
@@ -471,12 +397,12 @@
                 <div class="p-8 lg:p-10 space-y-4">
                     <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Link</h4>
                     <ul class="space-y-3 text-sm text-slate-600">
-                        <li><a href="./about.html" class="hover:text-slate-900 transition-colors">私たちについて</a></li>
-                        <li><a href="./platform.html" class="hover:text-slate-900 transition-colors">プラットフォーム</a></li>
-                        <li><a href="./company.html" class="hover:text-slate-900 transition-colors">会社概要</a></li>
+                        <li><a href="./about_cn.html" class="hover:text-slate-900 transition-colors">关于我们</a></li>
+                        <li><a href="./platform_cn.html" class="hover:text-slate-900 transition-colors">平台概要</a></li>
+                        <li><a href="./company_cn.html" class="hover:text-slate-900 transition-colors">公司简介</a></li>
                         <li><a href="https://www.kogakai.jp" class="hover:text-slate-900 transition-colors">
                                 <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
-                                    オークション事業
+                                    拍卖业务
                                 </span>
                             </a></li>
                     </ul>
@@ -486,7 +412,7 @@
                 <div class="p-8 lg:p-10 space-y-4">
                     <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Connect</h4>
                     <ul class="space-y-3 text-sm text-slate-600">
-                        <li><a href="./contact.html" class="hover:text-slate-900 transition-colors">お問い合わせ</a></li>
+                        <li><a href="./contact_cn.html" class="hover:text-slate-900 transition-colors">联系我们</a></li>
                     </ul>
                     <div class="flex space-x-4">
                         <!-- LINE -->
@@ -535,21 +461,5 @@
             });
         });
     </script>
-    <script>
-        // 封装加载函数
-        function loadComponent(id, file) {
-            fetch(file)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById(id).innerHTML = data;
-                });
-        }
-
-        // 执行加载
-        loadComponent('navbar-placeholder', 'navbar.html');
-        loadComponent('footer-placeholder', 'footer.html');
-    </script>
-
 </body>
-
 </html>
