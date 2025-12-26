@@ -777,20 +777,7 @@
             });
         });
     </script>
-    <script>
-        // 封装加载函数
-        function loadComponent(id, file) {
-            fetch(file)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById(id).innerHTML = data;
-                });
-        }
-
-        // 执行加载
-        loadComponent('navbar-placeholder', 'navbar.html');
-        loadComponent('footer-placeholder', 'footer.html');
-    </script>
+    
 
 </body>
 
