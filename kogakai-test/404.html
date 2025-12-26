@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | 古河會</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo_icononly.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script src="./assets/js/tailwind.js"></script>
+    <style>
+        /* Custom Grid Background Class */
+        .bg-grid {
+            background-image: linear-gradient(to right, #00000030 1px, transparent 1px), linear-gradient(to bottom, #00000030 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-600 font-sans antialiased selection:bg-slate-200 selection:text-slate-900">
+
+    <!-- Navbar (Linear Style) -->
+    <nav class="fixed w-full z-50 top-0 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/images/logo.svg" alt="古河會 | KOGAKAI" class="h-8 w-auto">
+                    </a>
+                </div>
+
+                <!-- Desktop Menu (Right Aligned) -->
+                <div class="hidden md:flex md:h-16 md:items-center ml-auto space-x-8">
+                    <!-- Company Dropdown -->
+                    <div class="relative group h-full flex items-center">
+                        <a href="./about.html"
+                            class="inline-flex items-center px-1 h-full border-b-2 border-transparent text-sm font-medium text-slate-600 hover:text-slate-900 hover:border-blue-600 transition-all duration-200 focus:outline-none w-full">
+                            私たちについて
+                            <svg class="ml-1 w-4 h-4 text-slate-400 group-hover:text-slate-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="absolute top-full right-0 w-56 bg-white border border-slate-200 shadow-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right">
+                            <div class="py-1">
+                                <a href="./about.html#mission"
+                                    class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
+                                    ミッション
+                                </a>
+                                <a href="./about.html#vision"
+                                    class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
+                                    ビジョン
+                                </a>
+                                <a href="./about.html#value"
+                                    class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
+                                    バリュー
+                                </a>
+                                <a href="./philosophy.html"
+                                    class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
+                                    フィロソフィー
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Platform Dropdown -->
+                    <div class="relative group h-full flex items-center">
+                        <a href="./platform.html"
+                            class="inline-flex items-center px-1 h-full border-b-2 border-transparent text-sm font-medium text-slate-600 hover:text-slate-900 hover:border-blue-600 transition-all duration-200 focus:outline-none w-full">
+                            プラットフォーム概要
+                            <svg class="ml-1 w-4 h-4 text-slate-400 group-hover:text-slate-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="absolute top-full right-0 w-64 bg-white border border-slate-200 shadow-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right">
+                            <div class="py-1">
+                                <a href="./platform.html#s1"
+                                    class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
+                                    <span class="block font-medium">バリュー・ネクサス</span>
+                                    <!--
+                                <span class="block text-xs text-slate-400 mt-0.5">技術基盤</span>
+                                -->
+                                </a>
+                                <a href="./platform.html#s2"
+                                    class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
+                                    <span class="block font-medium">テクノロジー</span>
+                                </a>
+                                <a href="./platform.html#s3"
+                                    class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
+                                    <span class="block font-medium">デジタルID</span>
+                                </a>
+                                <a href="./platform.html#s4"
+                                    class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
+                                    <span class="block font-medium">アセット・データベース</span>
+                                </a>
+                                <a href="./platform.html#s5"
+                                    class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
+                                    <span class="block font-medium">ビジネス・ソリューション</span>
+                                </a>
+                                <a href="./platform.html#s6"
+                                    class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
+                                    <span class="block font-medium">アセットファイナンス</span>
+                                </a>
+                                <a href="./platform.html#s7"
+                                    class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-blue-600">
+                                    <span class="block font-medium">ソリューション</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative group h-full flex items-center">
+                        <a href="./company.html"
+                            class="inline-flex items-center px-1 h-full border-b-2 border-transparent text-sm font-medium text-slate-600 hover:text-slate-900 hover:border-blue-600 transition-all duration-200 focus:outline-none w-full">
+                            会社概要
+                        </a>
+                    </div>
+
+                    <div class="relative group h-full flex items-center">
+                        <a href="./contact.html"
+                            class="inline-flex items-center px-1 h-full border-b-2 border-transparent text-sm font-medium text-slate-600 hover:text-slate-900 hover:border-blue-600 transition-all duration-200 focus:outline-none w-full">
+                            お問い合わせ
+                        </a>
+                    </div>
+
+                    <div class="relative group h-full flex items-center">
+                        <a href="https://www.kogakai.jp"
+                            class="inline-flex items-center px-1 h-full border-b-2 border-transparent text-sm font-medium text-slate-600 hover:text-slate-900 hover:border-blue-600 transition-all duration-200 focus:outline-none w-full">
+                            <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
+                                オークション事業
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-btn"
+                        class="inline-flex items-center justify-center p-2 rounded text-slate-500 hover:text-slate-900 hover:bg-slate-50 border border-transparent hover:border-slate-200 transition-all focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-white border-b border-slate-200" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <details class="group">
+                    <summary
+                        class="cursor-pointer block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm flex items-center justify-between">
+                        <span>私たちについて</span>
+                        <svg class="ml-2 w-4 h-4 text-slate-400 group-hover:text-slate-600" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-1 pl-3 space-y-1">
+                        <a href="./about.html#mission"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">ミッション</a>
+                        <a href="./about.html#vision"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">ビジョン</a>
+                        <a href="./about.html#value"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">バリュー</a>
+                        <a href="./philosophy.html"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">フィロソフィー</a>
+
+                    </div>
+                </details>
+                <details class="group">
+                    <summary
+                        class="cursor-pointer block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm flex items-center justify-between">
+                        <span>プラットフォーム</span>
+                        <svg class="ml-2 w-4 h-4 text-slate-400 group-hover:text-slate-600" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-1 pl-3 space-y-1">
+                        <a href="./platform.html#s1"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">バリュー・ネクサス</a>
+                        <a href="./platform.html#s2"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">テクノロジー</a>
+                        <a href="./platform.html#s3"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">デジタルID</a>
+                        <a href="./platform.html#s4"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">アセット・データベース</a>
+                        <a href="./platform.html#s5"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">ビジネス・ソリューション</a>
+                        <a href="./platform.html#s6"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">アセットファイナンス</a>
+                        <a href="./platform.html#s7"
+                            class="block px-3 py-2 text-sm text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-sm">ソリューション</a>
+                    </div>
+                </details>
+
+                <a href="./company.html"
+                    class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm">
+                    会社概要
+                </a>
+
+                <a href="./contact.html"
+                    class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm">
+                    お問い合わせ
+                </a>
+
+                <a href="https://www.kogakai.jp"
+                    class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-sm">
+                    <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
+                        オークション事業
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="relative pt-32 pb-20 border-b border-slate-200 bg-white">
+        <div class="absolute top-0 right-0 bottom-0 w-3/4 overflow-hidden z-0 pointer-events-none" aria-hidden="true">
+            <svg class="absolute top-0 right-0 h-full w-full opacity-30" viewBox="0 0 1000 1200" fill="none"
+                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <!-- Line 1: Lightest Blue, Leftmost -->
+                <path d="M600 0 L450 600 L600 1200" stroke="#93c5fd" stroke-width="1.5"
+                    vector-effect="non-scaling-stroke" />
+
+                <!-- Line 2: Medium Blue, Middle -->
+                <path d="M750 0 L600 600 L750 1200" stroke="#60a5fa" stroke-width="1.5"
+                    vector-effect="non-scaling-stroke" />
+
+                <!-- Line 3: Deep Blue, Rightmost -->
+                <path d="M900 0 L750 600 L900 1200" stroke="#2563eb" stroke-width="2"
+                    vector-effect="non-scaling-stroke" />
+            </svg>
+        </div>
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-6">
+                <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
+                    404
+                </span>
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed mb-10">
+                Page Not Found<br><br>
+                The page you are looking for might have been removed,<br>
+                had its name changed, or is temporarily unavailable.
+            </p>
+            
+            <a href="./index.html"
+                class="inline-flex justify-center items-center px-6 py-3 text-sm font-bold rounded text-white bg-gradient-to-r from-blue-800 to-blue-400 hover:shadow-lg hover:opacity-90 transition-all duration-200">
+                Back to Home
+            </a>
+        </div>
+        <div class="absolute top-0 right-0 bottom-0 w-full overflow-hidden z-0 pointer-events-none opacity-30">
+            <div class="absolute inset-0 bg-grid"></div>
+        </div>
+    </section>
+
+
+    <!-- Footer (Structured) -->
+    <footer id="contact" class="bg-white border-t border-slate-200">
+        <div class="max-w-[1440px] mx-auto">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-slate-100 border-x border-slate-100">
+
+                <!-- Brand -->
+                <div class="p-8 lg:p-10 space-y-4">
+                    <!-- Logo -->
+                    <img src="assets/images/logo.svg" alt="古河會 | KOGAKAI" class="h-12 md:h-12 w-auto">
+
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                        KOGAKAI Co., Ltd.<br>
+                    </p>
+
+
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                        <span class="font-bold">
+                            <span class="block"></span>
+                            Trust through Technology,<br>Liquidity for the Next Generation.
+                        </span>
+                    </p>
+                </div>
+
+                <!-- Contact -->
+                <div class="p-8 lg:p-10 space-y-4">
+                    <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Contact</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-start">
+                            <span class="block">〒603-8835<br>京都府京都市北区大宮西総門口町42-1<br>古河ビル</span>
+                        </li>
+                        <li>+(81) 075-468-1620</li>
+                        <li>
+                            <a href="mailto:yoshinaga.nao1982@gmail.com"
+                                class="hover:text-blue-600 transition-colors border-b border-slate-200 hover:border-blue-600 pb-0.5">
+                                yoshinaga.nao1982@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Links -->
+                <div class="p-8 lg:p-10 space-y-4">
+                    <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Link</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li><a href="./about.html" class="hover:text-slate-900 transition-colors">私たちについて</a></li>
+                        <li><a href="./platform.html" class="hover:text-slate-900 transition-colors">プラットフォーム</a></li>
+                        <li><a href="./company.html" class="hover:text-slate-900 transition-colors">会社概要</a></li>
+                        <li><a href="https://www.kogakai.jp" class="hover:text-slate-900 transition-colors">
+                                <span class="bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
+                                    オークション事業
+                                </span>
+                            </a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div class="p-8 lg:p-10 space-y-4">
+                    <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Connect</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li><a href="./contact.html" class="hover:text-slate-900 transition-colors">お問い合わせ</a></li>
+                    </ul>
+                    <div class="flex space-x-4">
+                        <!-- LINE -->
+                        <div class="relative group">
+                            <a
+                                class="block p-2 text-slate-400 hover:text-slate-900 border border-slate-200 rounded hover:border-slate-400 transition-all">
+                                <span class="sr-only">LINE</span>
+                                <img src="./assets/images/line_logo.svg" alt="LINE" class="h-5 w-5">
+                            </a>
+                            <!-- QR Code Tooltip -->
+                            <div
+                                class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-32 bg-white p-2 rounded shadow-lg border border-slate-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                <img src="./assets/images/line.png" alt="LINE QR Code" class="w-full h-auto">
+                                <div
+                                    class="absolute top-full left-1/2 transform -translate-x-1/2 -mt-1 border-4 border-transparent border-t-white">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-[1440px] mx-auto">
+                <div
+                    class="border-t border-slate-100 p-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400">
+                    <p>Copyright &copy; 2017-2026 KOGAKAI Co., Ltd. All rights reserved.</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+    <script>
+        // 封装加载函数
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                });
+        }
+
+        // 执行加载
+        loadComponent('navbar-placeholder', 'navbar.html');
+        loadComponent('footer-placeholder', 'footer.html');
+    </script>
+
+</body>
+
+</html>
