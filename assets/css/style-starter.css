@@ -17376,11 +17376,3 @@ button.owl-next {
   transform: translateY(0);
   opacity: 1;
 }
-
-/* Dark Theme Table Overrides */
-[data-theme="dark"] .table {
-  color: var(--font-color);
-}
-[data-theme="dark"] .table th {
-  color: var(--heading-color);
-}
